@@ -75,9 +75,43 @@ body {
   border: 1px solid black;
 }
 .navbar .navbar__toggle {
-  width: 50px;
-  height: 32px;
-  border: 1px solid black;
+  align-items: center;
+}
+.navbar .toggle-btn {
+  position: relative;
+  width: 30px;
+  display: flex;
+  height: 30px;
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+}
+.navbar .toggle-btn.open {
+  transform: rotate(90deg);
+}
+.navbar .toggle-btn.open .toggle-icon-line:nth-child(1) {
+  transform: rotate(45deg) translate(0.5rem, 0.5rem);
+}
+.navbar .toggle-btn.open .toggle-icon-line:nth-child(2) {
+  display: none;
+}
+.navbar .toggle-btn.open .toggle-icon-line:nth-child(3) {
+  transform: rotate(-45deg) translate(-0.5rem, 0.5rem);
+}
+.navbar .toggle-btn .toggle-icon-line {
+  position: absolute;
+  width: 30px;
+  height: 5px;
+  top: 5px;
+  transition: all ease-in-out 500ms;
+  background-color: #33332D;
+  transform: rotate(0deg);
+}
+.navbar .toggle-btn .toggle-icon-line:nth-child(2) {
+  transform: translateY(0.5rem);
+}
+.navbar .toggle-btn .toggle-icon-line:nth-child(3) {
+  transform: translateY(1rem);
 }
 
 @media only screen and (min-width: 768px) {
@@ -93,6 +127,6 @@ body {
     height: 86px;
   }
   .navbar .navbar-center {
-    width: 1040px;
+    width: 1300px;
   }
 }

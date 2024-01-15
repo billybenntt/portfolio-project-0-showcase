@@ -13,24 +13,26 @@
 }
 
 
+
+
+
+
+
 @media only screen and (min-width: map-get($breakpoints, "sm")) {
   .mobile {
     display: flex;
   }
-
   .desktop {
     display: none;
   }
-
-
 }
+
 
 
 @media only screen and (min-width: map-get($breakpoints, "md")) {
   .mobile {
     display: none;
   }
-
   .desktop {
     display: flex;
   }
