@@ -1,0 +1,18 @@
+@import "variables";
+
+// UTILITY MIXINS
+@mixin text-xxl {
+  font-weight: map-get($font-weight, "bold");
+}
+
+@mixin text-xl {
+  font-weight: map-get($font-weight, "bold");
+}
+
+@mixin text-lg {
+  font-weight: map-get($font-weight, "bold");
+}
+
+@mixin text-base {
+  font-weight: map-get($font-weight, "medium");
+}

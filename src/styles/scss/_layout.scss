@@ -1,0 +1,71 @@
+@import "setup/variables";
+
+
+body {
+  background-color: $accent-light-100;
+  color: $accent-dark-100;
+}
+
+
+.navbar {
+  border: 1px solid black;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 68px;
+
+  .navbar-center {
+    border: 1px dotted black;
+    display: flex;
+    justify-content: space-between;
+    width: $max-w-sm;
+  }
+
+  .navbar__logo {
+
+    width: 105px;
+    height: 32px;
+    border: 1px solid black;
+  }
+
+  .navbar__toggle {
+
+    width: 50px;
+    height: 32px;
+    border: 1px solid black;
+  }
+
+
+}
+
+
+@media only screen and (min-width: map-get($breakpoints, "md")) {
+  .navbar {
+    height: 86px;
+
+
+    .navbar-center {
+      width: $max-w-md;
+
+    }
+
+  }
+
+
+}
+
+
+@media only screen and (min-width: map-get($breakpoints, "lg")) {
+    .navbar {
+    height: 86px;
+
+    .navbar-center {
+      width: $max-w-lg;
+
+    }
+
+  }
+
+
+}
