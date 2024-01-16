@@ -1,10 +1,13 @@
-
 function MainPage() {
-  return (
-    <main >
-      <h2>MainPage Component</h2>
-    </main>
-  )
+    return (
+        <main>
+
+            <div className="box">
+
+            </div>
+
+        </main>
+    )
 }
 
 export default MainPage

@@ -1,6 +1,7 @@
 'use client';
 
 import {useState} from "react";
+import DBorder from "@/components/DBorder";
 
 function Navbar() {
 
@@ -12,13 +13,18 @@ function Navbar() {
         });
     }
 
+    const text = `\{\(\) \=\> myPortfolio\}`
 
     return (
         <nav className="navbar">
             <div className="navbar-center">
 
-                <div className="navbar__logo">
-                </div>
+                <DBorder>
+                     <div className="navbar__logo">
+                         <span>{text}</span>
+                     </div>
+                </DBorder>
+
 
                 <div className={`navbar__toggle mobile`} onClick={handleToggle}>
                     <div className={`toggle-btn ${open ? "open" : ""}`}>
@@ -27,7 +33,6 @@ function Navbar() {
                         <span className="toggle-icon-line"></span>
                     </div>
                 </div>
-
             </div>
         </nav>
     )
