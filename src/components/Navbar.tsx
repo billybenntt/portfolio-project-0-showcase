@@ -13,17 +13,20 @@ function Navbar() {
         });
     }
 
-    const text = `\{\(\) \=\> myPortfolio\}`
+    const text = `\{\(\) \=\> Bill\}`
 
     return (
-        <nav className="navbar">
+        <nav className="navbar show-box">
             <div className="navbar-center">
-
                 <DBorder>
-                     <div className="navbar__logo">
-                         <span>{text}</span>
-                     </div>
+                    <div className="navbar__logo">
+                        <span>{text}</span>
+                    </div>
                 </DBorder>
+
+                <div className="navbar__menu desktop show-box">
+                    <span>hola</span>
+                </div>
 
 
                 <div className={`navbar__toggle mobile`} onClick={handleToggle}>
@@ -33,6 +36,8 @@ function Navbar() {
                         <span className="toggle-icon-line"></span>
                     </div>
                 </div>
+
+
             </div>
         </nav>
     )

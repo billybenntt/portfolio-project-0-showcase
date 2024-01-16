@@ -2,9 +2,16 @@ function MainPage() {
     return (
         <main>
 
-            <div className="box">
 
-            </div>
+            <section className="hero">
+
+            </section>
+
+
+            <section className="skills">
+
+            </section>
+
 
         </main>
     )

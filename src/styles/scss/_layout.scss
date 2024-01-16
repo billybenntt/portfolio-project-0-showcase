@@ -2,13 +2,20 @@
 
 
 body {
-  background-color: $accent-light-100;
-  color: $accent-dark-100;
+  background-color: $accent-dark-100;
+  color: $accent-light-100;
 }
 
 
+.show-box {
+  border: 1px dotted white;
+
+}
+
+
+// NAVBAR
+
 .navbar {
-  border: 1px solid black;
   padding: 1rem;
   display: flex;
   align-items: center;
@@ -46,8 +53,7 @@ body {
     }
 
     &.open .toggle-icon-line:nth-child(2) {
-      transform: rotate(45deg);
-      visibility: hidden;
+      display: none;
     }
 
     &.open .toggle-icon-line:nth-child(3) {
@@ -60,7 +66,7 @@ body {
       height: 5px;
       top: 5px;
       transition: all ease-in-out 500ms;
-      background-color: $accent-dark-100;
+      background-color: $accent-light-100;
       transform: rotate(0deg);
     }
 
@@ -86,13 +92,14 @@ body {
   cursor: pointer;
   position: relative;
   padding: 0.1rem;
+  color: $accent-light-100;
   border-radius: 5px 0;
 
   &::before,
   &::after {
     z-index: 2;
     content: '';
-    border: 2px solid black;
+    border: 2px solid white;
     border-radius: 5px;
     position: absolute;
     width: calc(100% + 5px);
@@ -122,8 +129,8 @@ body {
 
   &:hover {
     transition: 500ms all ease-in-out;
-    color: white;
-    background-color: $accent-dark-100;
+    background-color: $accent-light-100;
+    color: $accent-dark-100;
   }
 
 
@@ -132,6 +139,15 @@ body {
 .navbar__logo {
   padding: 0.4rem;
   min-width: 50px;
+}
+
+
+// SECTION HERO
+
+.hero {
+  background-color: #212121;
+  height: 455px;
+
 }
 
 
