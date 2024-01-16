@@ -1,9 +1,21 @@
 @import "setup/variables";
+@import "utilities";
 
 
 body {
+  @extend .text-md;
   background-color: $accent-dark-100;
   color: $accent-light-100;
+}
+
+.icon-1  {
+  width: 50px;
+  filter:$bg-filter-1;
+}
+
+.icon-2{
+  width: 100px;
+  filter:$bg-filter-2;
 }
 
 
@@ -20,7 +32,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 68px;
+  height: 75px;
 
   .navbar-center {
     display: flex;
@@ -91,7 +103,7 @@ body {
 .d-border {
   cursor: pointer;
   position: relative;
-  padding: 0.1rem;
+  padding: 0;
   color: $accent-light-100;
   border-radius: 5px 0;
 

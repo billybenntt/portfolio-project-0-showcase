@@ -25,7 +25,9 @@ function Navbar() {
                 </DBorder>
 
                 <div className="navbar__menu desktop show-box">
-                    <span>hola</span>
+                    <div>
+
+                    </div>
                 </div>
 
 

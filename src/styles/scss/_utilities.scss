@@ -12,6 +12,18 @@
   @include text-xl;
 }
 
+.text-lg {
+  @include text-lg;
+}
+
+.text-md {
+  @include text-md;
+}
+
+.text-base {
+  @include text-base;
+}
+
 
 
 

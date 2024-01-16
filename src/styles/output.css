@@ -24,11 +24,82 @@ img {
 }
 
 .text-xxl {
+  font-size: 3.375rem;
   font-weight: 700;
+  line-height: 3.688rem;
 }
 
 .text-xl {
+  font-size: 1.875rem;
   font-weight: 700;
+  line-height: 2.438rem;
+}
+
+.text-lg {
+  font-size: 1.625rem;
+  font-weight: 700;
+  line-height: 2rem;
+}
+
+.text-md, body {
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.75rem;
+}
+
+.text-base {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 0.938rem;
+}
+
+@media only screen and (min-width: 375px) {
+  .mobile {
+    display: flex;
+  }
+  .desktop {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .mobile {
+    display: none;
+  }
+  .desktop {
+    display: flex;
+  }
+  .modal {
+    width: 480px;
+  }
+}
+.text-xxl {
+  font-size: 3.375rem;
+  font-weight: 700;
+  line-height: 3.688rem;
+}
+
+.text-xl {
+  font-size: 1.875rem;
+  font-weight: 700;
+  line-height: 2.438rem;
+}
+
+.text-lg {
+  font-size: 1.625rem;
+  font-weight: 700;
+  line-height: 2rem;
+}
+
+.text-md, body {
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.75rem;
+}
+
+.text-base {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 0.938rem;
 }
 
 @media only screen and (min-width: 375px) {
@@ -55,6 +126,16 @@ body {
   color: #FFFFFF;
 }
 
+.icon-1 {
+  width: 50px;
+  filter: invert(56%) sepia(47%) saturate(692%) hue-rotate(124deg) brightness(95%) contrast(94%);
+}
+
+.icon-2 {
+  width: 100px;
+  filter: invert(46%) sepia(28%) saturate(7499%) hue-rotate(306deg) brightness(99%) contrast(87%);
+}
+
 .show-box {
   border: 1px dotted white;
 }
@@ -64,7 +145,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 68px;
+  height: 75px;
 }
 .navbar .navbar-center {
   display: flex;
@@ -120,7 +201,7 @@ body {
 .d-border {
   cursor: pointer;
   position: relative;
-  padding: 0.1rem;
+  padding: 0;
   color: #FFFFFF;
   border-radius: 5px 0;
 }

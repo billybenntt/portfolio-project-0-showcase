@@ -2,17 +2,32 @@
 
 // UTILITY MIXINS
 @mixin text-xxl {
+  font-size: map-get($font-sizes, "5");
   font-weight: map-get($font-weight, "bold");
+  line-height: map-get($line-height, "5");
 }
 
 @mixin text-xl {
+  font-size: map-get($font-sizes, "4");
   font-weight: map-get($font-weight, "bold");
+  line-height: map-get($line-height, "4");
 }
 
 @mixin text-lg {
+  font-size: map-get($font-sizes, "3");
   font-weight: map-get($font-weight, "bold");
+  line-height: map-get($line-height, "3");
 }
 
+@mixin text-md {
+  font-size: map-get($font-sizes, "2");
+  font-weight: map-get($font-weight, "bold");
+  line-height: map-get($line-height, "2");
+}
+
+
 @mixin text-base {
+  font-size: map-get($font-sizes, "1");
   font-weight: map-get($font-weight, "medium");
+  line-height: map-get($line-height, "1");
 }

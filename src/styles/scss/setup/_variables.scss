@@ -14,6 +14,10 @@ $primary-purple-100: #B2BBF0FF;
 $primary-purple-200: #B795F3FF;
 $primary-blue-100: #82F7EBFF;
 $primary-blue-200: #82D2F7FF;
+$primary-blue-300: #06b6d4;
+$bg-filter-1: invert(56%) sepia(47%) saturate(692%) hue-rotate(124deg) brightness(95%) contrast(94%);
+$bg-filter-2: invert(46%) sepia(28%) saturate(7499%) hue-rotate(306deg) brightness(99%) contrast(87%);
+
 
 
 $max-w-sm: 400px;
@@ -35,17 +39,17 @@ $transition: 0.3s ease-in-out all;
 
 $font-sizes: (
         "1": 1rem, /*16px*/
-        "2": 1rem, /*18px*/
-        "3": 1.375rem, /*25.92px*/
-        "4": 1.5rem, /*29.2808px*/
-        "5": 2.25rem /*54px*/
+        "2": 1.125rem, /*18px*/
+        "3": 1.625rem, /*26px*/
+        "4": 1.875rem, /*30px*/
+        "5": 3.375rem /*54px*/
 );
 $line-height: (
         "1": 0.938rem, /*15px*/
-        "2": 1.125rem, /*28px*/
-        "3": 1.375rem, /*32px*/
-        "4": 1.5rem, /*39px*/
-        "5": 2.063rem, /*59px*/
+        "2": 1.75rem, /*28px*/
+        "3": 2rem, /*32px*/
+        "4": 2.438rem, /*39px*/
+        "5": 3.688rem, /*59px*/
 );
 $letter-spacing: (
         "1": -0.10px, /*-0.10px*/
