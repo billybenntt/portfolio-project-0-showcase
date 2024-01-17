@@ -16,26 +16,31 @@ function Navbar() {
     const text = `\{\(\) \=\> Bill\}`
 
     return (
-        <nav className="navbar show-box">
-            <div className="navbar-center">
+        <nav className="navbar">
+            <div className="navbar-center show-box">
                 <DBorder>
                     <div className="navbar__logo">
                         <span>{text}</span>
                     </div>
                 </DBorder>
 
-                <div className="navbar__menu desktop show-box">
-                    <div>
-
+                <div className="navbar__menu desktop">
+                    <div className="navbar__menu-center">
+                        <div>Home</div>
+                        <div>About Me</div>
+                        <div>Projects</div>
+                        <div>FAQ</div>
+                        <div>Contact</div>
                     </div>
                 </div>
 
-
                 <div className={`navbar__toggle mobile`} onClick={handleToggle}>
-                    <div className={`toggle-btn ${open ? "open" : ""}`}>
-                        <span className="toggle-icon-line"></span>
-                        <span className="toggle-icon-line"></span>
-                        <span className="toggle-icon-line"></span>
+                    <div className="menu-container">
+                        <div className={`menu-icon ${open ? "open" : ""}`}>
+                            <span className="line"></span>
+                            <span className="line"></span>
+                            <span className="line"></span>
+                        </div>
                     </div>
                 </div>
 

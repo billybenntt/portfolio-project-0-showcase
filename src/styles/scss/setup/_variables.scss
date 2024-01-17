@@ -22,8 +22,9 @@ $bg-filter-2: invert(46%) sepia(28%) saturate(7499%) hue-rotate(306deg) brightne
 
 $max-w-sm: 400px;
 $max-w-md: 850px;
-$max-w-lg: 1040px;
+$max-w-lg: 992px;
 $max-w-xl: 1300px;
+$max-w-xxl: 1600px;
 
 $rounded-sm: 4px;
 $rounded-md: 6px;
@@ -34,7 +35,8 @@ $rounded-full: 50%;
 $box-shadow-1: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 $box-shadow-2: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
 $box-shadow-3: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-$transition: 0.3s ease-in-out all;
+$transition-1: .4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+$transition-2: 1s cubic-bezier(0.37, 0, 0.63, 1) 0s;
 
 
 $font-sizes: (
