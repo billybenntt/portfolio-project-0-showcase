@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import SampleImg from '../assets/portfolio-.svg'
+import SampleImg from '../assets/image-2.svg'
 
 
 function MainPage() {
@@ -11,11 +11,8 @@ function MainPage() {
 
                 <div className="section-center show-box">
                     <h1 className="text-md">Hello my name is</h1>
-                    <span className="">
-                     <Image src={SampleImg} alt="as" width={20} height={20} className="icon-1"/>
-                   </span>
+                    <Image src={SampleImg} alt="as" width={500}/>
                 </div>
-
 
             </section>
 
@@ -24,7 +21,6 @@ function MainPage() {
                 <div className="section-center show-box">
                     <h1 className="text-md">My skills</h1>
                     <span className="">
-                     <Image src={SampleImg} alt="as" width={20} height={20} className="icon-1"/>
                    </span>
                 </div>
             </section>
@@ -33,7 +29,6 @@ function MainPage() {
                 <div className="section-center show-box">
                     <h1 className="text-md">My Education</h1>
                     <span className="">
-                     <Image src={SampleImg} alt="as" width={20} height={20} className="icon-1"/>
                    </span>
                 </div>
             </section>

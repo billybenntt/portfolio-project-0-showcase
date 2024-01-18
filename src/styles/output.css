@@ -267,16 +267,16 @@ body {
 
 .hero {
   background-color: #212121;
-  height: 200px;
+  min-height: 200px;
 }
 
 .skills {
-  height: 200px;
+  min-height: 200px;
 }
 
 .education {
   background-color: #212121;
-  height: 200px;
+  min-height: 200px;
 }
 
 @media only screen and (min-width: 768px) {
