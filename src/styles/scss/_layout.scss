@@ -4,8 +4,39 @@
 
 body {
   @extend .text-md;
-  background-color: $accent-dark-100;
+  background-color: $accent-dark-200;
   color: $accent-light-100;
+}
+
+// ICONS
+
+.icon {
+  img {
+  }
+}
+
+.card {
+  border: 1px dotted white;
+  padding: 1rem;
+border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  max-width: 350px;
+  font-size: 16px;
+  font-weight: normal;
+
+  .icon{
+    display: flex;
+    column-gap: 0.5rem;
+  }
+
+
+  h3, p {
+    text-align: start;
+  }
+
+
 }
 
 
@@ -157,6 +188,11 @@ body {
   }
 
 
+   &:not(:hover) {
+    transition: $transition-2;
+  }
+
+
 }
 
 
@@ -165,9 +201,19 @@ body {
 .hero {
   background-color: #212121;
   min-height: 200px;
+
+  .section-center {
+    padding: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
 }
 
 .skills {
+  padding: 5rem;
+  background-color: $accent-dark-100;
   min-height: 200px;
 
 }

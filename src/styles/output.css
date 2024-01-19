@@ -150,8 +150,27 @@ img {
   }
 }
 body {
-  background-color: #33332D;
+  background-color: #212121;
   color: #FFFFFF;
+}
+
+.card {
+  border: 1px dotted white;
+  padding: 1rem;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  max-width: 350px;
+  font-size: 16px;
+  font-weight: normal;
+}
+.card .icon {
+  display: flex;
+  column-gap: 0.5rem;
+}
+.card h3, .card p {
+  text-align: start;
 }
 
 .navbar {
@@ -264,13 +283,24 @@ body {
   background-color: #FFFFFF;
   color: #33332D;
 }
+.d-border:not(:hover) {
+  transition: 1s cubic-bezier(0.37, 0, 0.63, 1) 0s;
+}
 
 .hero {
   background-color: #212121;
   min-height: 200px;
 }
+.hero .section-center {
+  padding: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
 .skills {
+  padding: 5rem;
+  background-color: #33332D;
   min-height: 200px;
 }
 
