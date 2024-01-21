@@ -2,6 +2,7 @@
 
 import {useState} from "react";
 import DBorder from "@/components/DBorder";
+import Link from "next/link";
 
 function Navbar() {
 
@@ -26,10 +27,19 @@ function Navbar() {
 
                 <div className="navbar__menu desktop">
                     <div className="navbar__menu-center">
-                        <div>Home</div>
+                        <Link href={"/"}>
+                            <div>Home</div>
+                        </Link>
+
+                        <Link href={"/projects"}>
+                            <div>Projects</div>
+                        </Link>
+                        <Link href={"/faq"}>
+                            <div>FAQ</div>
+                        </Link>
+
+
                         <div>About Me</div>
-                        <div>Projects</div>
-                        <div>FAQ</div>
                         <div>Contact</div>
                     </div>
                 </div>

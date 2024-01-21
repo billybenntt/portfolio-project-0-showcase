@@ -23,6 +23,11 @@ img {
   height: auto;
 }
 
+a {
+  all: unset;
+  cursor: pointer;
+}
+
 .text-xxl {
   font-size: 3.375rem;
   font-weight: 700;
