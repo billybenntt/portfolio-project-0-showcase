@@ -16,9 +16,8 @@ body {
 }
 
 .card {
-  border: 1px dotted white;
   padding: 1rem;
-border-radius: 15px;
+  border-radius: 15px;
   display: flex;
   flex-direction: column;
   row-gap: 1rem;
@@ -26,7 +25,7 @@ border-radius: 15px;
   font-size: 16px;
   font-weight: normal;
 
-  .icon{
+  .icon {
     display: flex;
     column-gap: 0.5rem;
   }
@@ -188,7 +187,7 @@ border-radius: 15px;
   }
 
 
-   &:not(:hover) {
+  &:not(:hover) {
     transition: $transition-2;
   }
 
@@ -219,11 +218,41 @@ border-radius: 15px;
 }
 
 
-.education {
-  background-color: #212121;
-  min-height: 200px;
-}
+// TIMELINE
 
+.timeline {
+  width: $max-w-xl;
+  margin: 0 auto;
+  position: relative;
+
+
+  .timeline-center {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 200px);
+  }
+
+
+  // MIDDLE LINE
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 20px;
+    background: linear-gradient(115deg, #4fcf70, #fad648, #a767e5, #12bcfe, #44ce7b);;
+    width: 5px;
+    z-index: 1;
+    height: 100%;
+  }
+
+  .card{
+    padding-left: 3rem;
+  }
+
+
+
+
+}
 
 @media only screen and (min-width: map-get($breakpoints, "md")) {
   .navbar {
@@ -244,6 +273,45 @@ border-radius: 15px;
       margin: 0 auto;
       width: $max-w-lg;
     }
+
+  }
+
+
+  .timeline {
+
+    &:before {
+      left: 50%;
+      width: 5px;
+    }
+
+    .timeline-center {
+      grid-template-columns: repeat(2, 1fr);
+
+    }
+
+
+    .card {
+      display: flex;
+      padding: 1rem;
+      justify-content: space-between;
+    }
+
+    .card:nth-child(odd) {
+      justify-self: end;
+      direction: rtl;
+
+    }
+
+    .card:nth-child(2) {
+      grid-row-start: 2;
+      grid-column-start: 2;
+
+    }
+
+    .card:nth-child(3) {
+      grid-row-start: 3;
+    }
+
 
   }
 

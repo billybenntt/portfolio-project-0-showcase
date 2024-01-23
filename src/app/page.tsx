@@ -5,9 +5,10 @@ function MainPage() {
     return (
         <main>
 
+            {/*HERO */}
+
 
             <section className="hero section">
-
                 <div className="section-center show-box">
                     <div>
                         <h1 className="text-xl">Hello my name is Bill</h1>
@@ -21,12 +22,10 @@ function MainPage() {
                 </div>
             </section>
 
+            {/*SKILLS */}
 
             <section className="skills section">
-
-                <div className="section-center show-box">
-
-
+                <div className="section-center  show-box">
                     <div className="card">
                   <span className="icon">
                     <Image src="ts-2.svg" height={50} width={50} alt="icon"/>
@@ -38,16 +37,75 @@ function MainPage() {
                             error exercitationem fugit, laudantium minima placeat quaerat quia
                         </p>
                     </div>
-
-
                 </div>
             </section>
 
-            <section className="education section">
-                <div className="section-center show-box">
-                    <h1 className="text-md">My Education</h1>
-                    <span className="">
-                   </span>
+
+            {/*TIMELINE */}
+
+            <section className="timeline show-box ">
+                <div className="timeline-center section-center">
+                    <div className="card ">
+                        <div className="card__body">
+                            <h3 className="text-lg">First Year</h3>
+                            <span className="text-md">Some work experience</span>
+                            <p className="text-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                eiusmod tempor
+                                in voluptate.</p>
+                        </div>
+                    </div>
+                    <div className="card">
+                        <div className="card__body">
+                            <h3 className="text-lg">Second Year</h3>
+                            <span className="text-md">Some work experience</span>
+                            <p className="text-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                eiusmod tempor
+                                in voluptate.</p>
+                        </div>
+                    </div>
+
+                    <div className="card">
+                        <div className="card__body">
+                            <h3 className="text-lg">Third Year</h3>
+                            <span className="text-md">Some work experience</span>
+                            <p className="text-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                eiusmod tempor
+                                in voluptate.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section className="timeline show-box ">
+                <div className="timeline-center section-center">
+                    <div className="card ">
+                        <div className="card__body">
+                            <h3 className="text-lg">First Year</h3>
+                            <span className="text-md">Some work experience</span>
+                            <p className="text-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                eiusmod tempor
+                                in voluptate.</p>
+                        </div>
+                    </div>
+                    <div className="card">
+                        <div className="card__body">
+                            <h3 className="text-lg">Second Year</h3>
+                            <span className="text-md">Some work experience</span>
+                            <p className="text-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                eiusmod tempor
+                                in voluptate.</p>
+                        </div>
+                    </div>
+
+                    <div className="card">
+                        <div className="card__body">
+                            <h3 className="text-lg">Third Year</h3>
+                            <span className="text-md">Some work experience</span>
+                            <p className="text-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                eiusmod tempor
+                                in voluptate.</p>
+                        </div>
+                    </div>
                 </div>
             </section>
 

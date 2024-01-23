@@ -160,7 +160,6 @@ body {
 }
 
 .card {
-  border: 1px dotted white;
   padding: 1rem;
   border-radius: 15px;
   display: flex;
@@ -309,9 +308,28 @@ body {
   min-height: 200px;
 }
 
-.education {
-  background-color: #212121;
-  min-height: 200px;
+.timeline {
+  width: 1300px;
+  margin: 0 auto;
+  position: relative;
+}
+.timeline .timeline-center {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 200px);
+}
+.timeline:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 20px;
+  background: linear-gradient(115deg, #4fcf70, #fad648, #a767e5, #12bcfe, #44ce7b);
+  width: 5px;
+  z-index: 1;
+  height: 100%;
+}
+.timeline .card {
+  padding-left: 3rem;
 }
 
 @media only screen and (min-width: 768px) {
@@ -327,6 +345,29 @@ body {
   .section .section-center {
     margin: 0 auto;
     width: 992px;
+  }
+  .timeline:before {
+    left: 50%;
+    width: 5px;
+  }
+  .timeline .timeline-center {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .timeline .card {
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+  }
+  .timeline .card:nth-child(odd) {
+    justify-self: end;
+    direction: rtl;
+  }
+  .timeline .card:nth-child(2) {
+    grid-row-start: 2;
+    grid-column-start: 2;
+  }
+  .timeline .card:nth-child(3) {
+    grid-row-start: 3;
   }
 }
 @media only screen and (min-width: 1024px) {
