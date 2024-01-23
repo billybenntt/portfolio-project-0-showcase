@@ -45,7 +45,7 @@ function MainPage() {
 
             <section className="timeline show-box ">
                 <div className="timeline-center section-center">
-                    <div className="card ">
+                    <div className="card">
                         <div className="card__body">
                             <h3 className="text-lg">First Year</h3>
                             <span className="text-md">Some work experience</span>
