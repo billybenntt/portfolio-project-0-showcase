@@ -221,7 +221,7 @@ body {
 // TIMELINE
 
 .timeline {
-  width: $max-w-xl;
+  width: $max-w-sm;
   margin: 0 auto;
   position: relative;
 
@@ -278,6 +278,7 @@ body {
 
 
   .timeline {
+  width: $max-w-md;
 
     &:before {
       left: 50%;
@@ -339,6 +340,11 @@ body {
 
 
   }
+
+  .timeline{
+    width: $max-w-xl;
+  }
+
 
 
 }

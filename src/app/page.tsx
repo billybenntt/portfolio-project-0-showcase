@@ -7,7 +7,6 @@ function MainPage() {
 
             {/*HERO */}
 
-
             <section className="hero section">
                 <div className="section-center show-box">
                     <div>
@@ -15,7 +14,6 @@ function MainPage() {
                         <h3 className="text-md">Front-End Developer</h3>
                         <p>Turning Ideas Into Interactive Reality</p>
                     </div>
-
                     <div className="desktop">
                         <Image src="image-1.svg" alt="as" height={500} width={500}/>
                     </div>

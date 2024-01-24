@@ -309,7 +309,7 @@ body {
 }
 
 .timeline {
-  width: 1300px;
+  width: 400px;
   margin: 0 auto;
   position: relative;
 }
@@ -346,6 +346,9 @@ body {
     margin: 0 auto;
     width: 992px;
   }
+  .timeline {
+    width: 850px;
+  }
   .timeline:before {
     left: 50%;
     width: 5px;
@@ -380,6 +383,9 @@ body {
   }
   .section .section-center {
     margin: 0 auto;
+    width: 1300px;
+  }
+  .timeline {
     width: 1300px;
   }
 }
