@@ -8,6 +8,7 @@ body {
   color: $accent-light-100;
 }
 
+
 // ICONS
 
 .icon {
@@ -40,7 +41,6 @@ body {
 
 
 // NAVBAR
-
 .navbar {
   padding: 1rem;
   display: flex;
@@ -197,7 +197,7 @@ body {
 
 // SECTION HERO
 
-.hero {
+section.hero {
   background-color: #212121;
   min-height: 200px;
 
@@ -210,18 +210,18 @@ body {
 
 }
 
-.skills {
-  padding: 5rem;
+section.skills {
   background-color: $accent-dark-100;
-  min-height: 200px;
-
 }
 
 
 // TIMELINE
 
-.timeline {
-  width: $max-w-sm;
+.timeline-2 {
+  background-color: black;
+}
+
+.timeline-1, .timeline-2 {
   margin: 0 auto;
   position: relative;
 
@@ -232,9 +232,8 @@ body {
     grid-template-rows: repeat(3, 200px);
   }
 
-
   // MIDDLE LINE
-  &:before {
+  .timeline-center:before {
     content: '';
     position: absolute;
     top: 0;
@@ -245,14 +244,12 @@ body {
     height: 100%;
   }
 
-  .card{
+  .card {
     padding-left: 3rem;
   }
 
-
-
-
 }
+
 
 @media only screen and (min-width: map-get($breakpoints, "md")) {
   .navbar {
@@ -277,17 +274,17 @@ body {
   }
 
 
-  .timeline {
-  width: $max-w-md;
-
-    &:before {
-      left: 50%;
-      width: 5px;
-    }
+  .timeline-1, .timeline-2 {
 
     .timeline-center {
+      margin: 0 auto;
       grid-template-columns: repeat(2, 1fr);
+      width: $max-w-md;
+    }
 
+    .timeline-center:before {
+      left: 50%;
+      width: 5px;
     }
 
 
@@ -300,19 +297,16 @@ body {
     .card:nth-child(odd) {
       justify-self: end;
       direction: rtl;
-
     }
 
     .card:nth-child(2) {
       grid-row-start: 2;
       grid-column-start: 2;
-
     }
 
     .card:nth-child(3) {
       grid-row-start: 3;
     }
-
 
   }
 
@@ -341,10 +335,13 @@ body {
 
   }
 
-  .timeline{
-    width: $max-w-xl;
-  }
+  .timeline-1, .timeline-2 {
+    .timeline-center {
+      width: $max-w-xl;
+    }
 
+
+  }
 
 
 }

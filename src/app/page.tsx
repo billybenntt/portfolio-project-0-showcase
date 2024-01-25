@@ -4,9 +4,7 @@ import Image from 'next/image'
 function MainPage() {
     return (
         <main>
-
             {/*HERO */}
-
             <section className="hero section">
                 <div className="section-center show-box">
                     <div>
@@ -39,10 +37,10 @@ function MainPage() {
             </section>
 
 
-            {/*TIMELINE */}
+            {/*TIMELINE 1 */}
 
-            <section className="timeline show-box ">
-                <div className="timeline-center section-center">
+            <section className="timeline-1  show-box ">
+                <div className="timeline-center show-box">
                     <div className="card">
                         <div className="card__body">
                             <h3 className="text-lg">First Year</h3>
@@ -74,9 +72,10 @@ function MainPage() {
                 </div>
             </section>
 
-            <section className="timeline show-box ">
-                <div className="timeline-center section-center">
-                    <div className="card ">
+            {/*TIMELINE 2*/}
+            <section className="timeline-2  show-box ">
+                <div className="timeline-center show-box">
+                    <div className="card">
                         <div className="card__body">
                             <h3 className="text-lg">First Year</h3>
                             <span className="text-md">Some work experience</span>
