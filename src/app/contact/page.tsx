@@ -1,10 +1,10 @@
-function FAQPage() {
+function ContactPage() {
   return (
     <>
           <section className="hero section">
                 <div className="section-center show-box">
                     <div>
-                        <h1 className="text-xl">FAQ</h1>
+                        <h1 className="text-xl">Contact Page</h1>
                     </div>
                     <div className="desktop">
                     </div>
@@ -14,4 +14,4 @@ function FAQPage() {
   )
 }
 
-export default FAQPage
+export default ContactPage

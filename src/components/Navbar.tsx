@@ -30,17 +30,18 @@ function Navbar() {
                         <Link href={"/"}>
                             <div>Home</div>
                         </Link>
-
                         <Link href={"/projects"}>
                             <div>Projects</div>
                         </Link>
                         <Link href={"/faq"}>
                             <div>FAQ</div>
                         </Link>
-
-
-                        <div>About Me</div>
-                        <div>Contact</div>
+                        <Link href={"/about"}>
+                            <div>About Me</div>
+                        </Link>
+                        <Link href={"/contact"}>
+                            <div>Contact Me</div>
+                        </Link>
                     </div>
                 </div>
 

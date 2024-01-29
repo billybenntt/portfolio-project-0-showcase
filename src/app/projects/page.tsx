@@ -1,12 +1,19 @@
 function ProjectsPage() {
-  return (
-    <>
-      <h2>ProjectsPage Component
+    return (
+        <>
+            {/*HERO */}
+            <section className="hero section">
+                <div className="section-center show-box">
+                    <div>
+                        <h1 className="text-xl">My Projects</h1>
+                    </div>
+                    <div className="desktop">
+                    </div>
+                </div>
+            </section>
 
-
-      </h2>
-    </>
-  )
+        </>
+    )
 }
 
 export default ProjectsPage
