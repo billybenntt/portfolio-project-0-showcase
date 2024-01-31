@@ -16,29 +16,6 @@ body {
   }
 }
 
-.card {
-  padding: 1rem;
-  border-radius: 15px;
-  display: flex;
-  flex-direction: column;
-  row-gap: 1rem;
-  max-width: 350px;
-  font-size: 16px;
-  font-weight: normal;
-
-  .icon {
-    display: flex;
-    column-gap: 0.5rem;
-  }
-
-
-  h3, p {
-    text-align: start;
-  }
-
-
-}
-
 
 // NAVBAR
 .navbar {
@@ -212,6 +189,44 @@ section.hero {
 
 section.skills {
   background-color: $accent-dark-100;
+  padding: 3rem;
+
+  .skills-center {
+    max-width: $max-w-xl;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+
+  .skill-card {
+    padding: 1rem;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    max-width: 350px;
+    font-size: 16px;
+    font-weight: normal;
+
+    .icon {
+      display: flex;
+      column-gap: 0.5rem;
+    }
+
+
+    h3, p {
+      text-align: start;
+    }
+
+  }
+
+  .skills-center {
+    display: flex;
+  }
+
+
 }
 
 
@@ -222,6 +237,8 @@ section.skills {
 }
 
 .timeline-1, .timeline-2 {
+    padding: 3rem;
+
   .timeline-center {
     --col-gap: 2rem;
     --row-gap: 2rem;
