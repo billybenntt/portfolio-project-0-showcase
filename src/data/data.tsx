@@ -60,7 +60,7 @@ export const data =
             "id": 7,
             "title": "State Management",
             "icons": [
-                "redux.svg",
+                "test.svg",
                 "redux.svg",
             ],
             "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam earum eius error exercitationem fugit, laudantium minima placeat quaerat quia"
