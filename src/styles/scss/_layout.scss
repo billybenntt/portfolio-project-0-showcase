@@ -4,8 +4,8 @@
 
 body {
   @extend .text-md;
-  background-color: $accent-dark-200;
-  color: $accent-light-100;
+  background-color: rgb(3, 7, 17);
+  color: hsla(215.4 16.3% 56.9%);
 }
 
 
@@ -19,11 +19,16 @@ body {
 
 // NAVBAR
 .navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px dotted rgba(128, 128, 128, 0.74);
   padding: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 75px;
 
   .navbar-center {
     display: flex;
@@ -107,6 +112,11 @@ body {
 
 }
 
+.offset {
+  position: relative;
+  top: 200px;
+}
+
 
 // FANCY BORDER
 
@@ -175,8 +185,9 @@ body {
 // SECTION HERO
 
 section.hero {
-  background-color: #212121;
+  background-color: black;
   min-height: 200px;
+  position: relative;
 
   .section-center {
     padding: 3rem;
@@ -188,7 +199,6 @@ section.hero {
 }
 
 section.skills {
-  background-color: $accent-dark-100;
   padding: 3rem;
 
   .skills-center {
@@ -237,7 +247,7 @@ section.skills {
 }
 
 .timeline-1, .timeline-2 {
-    padding: 3rem;
+  padding: 3rem;
 
   .timeline-center {
     --col-gap: 2rem;

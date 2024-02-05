@@ -2,7 +2,7 @@ function ContactPage() {
   return (
     <>
           <section className="hero section">
-                <div className="section-center show-box">
+                <div className="section-center ">
                     <div>
                         <h1 className="text-xl">Contact Page</h1>
                     </div>

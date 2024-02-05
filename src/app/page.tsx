@@ -4,10 +4,10 @@ import {data} from "@/data/data";
 
 function MainPage() {
     return (
-        <main>
+        <main className="offset">
             {/*HERO */}
             <section className="hero section">
-                <div className="section-center show-box">
+                <div className="section-center ">
                     <div>
                         <h1 className="text-xl">Hello my name is Bill</h1>
                         <h3 className="text-md">Front-End Developer</h3>
@@ -22,7 +22,7 @@ function MainPage() {
             {/*SKILLS */}
 
             <section className="skills section">
-                <div className="skills-center show-box">
+                <div className="skills-center ">
                     {data.map((item, index) => {
                         return <SkillCard key={index} {...item}/>
                     })}
