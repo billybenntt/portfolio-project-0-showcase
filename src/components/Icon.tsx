@@ -3,7 +3,7 @@ import * as React from "react"
 function SvgComponent() {
   return (
     <svg
-      width={50}
+      width={40}
       height={113}
       viewBox="0 0 109 113"
       fill="none"

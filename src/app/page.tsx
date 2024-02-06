@@ -22,20 +22,20 @@ function MainPage() {
             {/*SKILLS */}
 
             <section className="skills section">
-                <div className="skills-center ">
+
+                <div className="skills-center section-center ">
+
                     {data.map((item, index) => {
                         return <SkillCard key={index} {...item}/>
                     })}
-
-
                 </div>
             </section>
 
 
             {/*TIMELINE 1 */}
 
-            <section className="timeline-1">
-                <div className="timeline-center">
+            <section className="timeline-1 section">
+                <div className="timeline-center section-center">
                     <div className="timeline-card">
                         <div className="date">2002</div>
                         <div className="title">Title 1</div>

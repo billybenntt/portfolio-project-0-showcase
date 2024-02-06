@@ -1,7 +1,7 @@
 function ContactPage() {
   return (
     <main className="offset">
-          <section className="hero section">
+          <section className="hero section show-box">
                 <div className="section-center ">
                     <div>
                         <h1 className="text-xl">Contact Page</h1>

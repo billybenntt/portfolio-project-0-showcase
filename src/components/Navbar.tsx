@@ -18,7 +18,7 @@ function Navbar() {
 
     return (
         <nav className="navbar">
-            <div className="navbar-center ">
+            <div className="navbar-center">
                 <DBorder>
                     <div className="navbar__logo">
                         <span>{text}</span>
