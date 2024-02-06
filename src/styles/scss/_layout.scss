@@ -5,6 +5,8 @@
 body {
   background-color: rgba(1, 4, 9, 0.93);
   color: hsla(215.4 16.3% 56.9%);
+  user-select: none;
+  scroll-behavior: smooth
 }
 
 .offset {
@@ -40,6 +42,7 @@ body {
   left: 0;
   right: 0;
   z-index: 99;
+  color: white;
   background-color: rgba(1, 4, 9, 0.4);
   backdrop-filter: blur(8px);
   border-bottom: 1px solid rgba(128, 128, 128, 0.24);
@@ -196,7 +199,6 @@ section.hero {
     flex-direction: row;
     justify-content: space-evenly;
 
-
   }
 
 }
@@ -263,7 +265,8 @@ section.skills {
     content: "";
     grid-column: 1;
     grid-row: 1 / span 20;
-    background: linear-gradient(115deg, #4fcf70, #fad648, #a767e5, #12bcfe, #44ce7b);;
+
+    background: linear-gradient(115deg, #4fcf70, #fad648, #a767e5, rgba(18, 188, 254, 0.55), #44ce7b);;
     border-radius: calc(var(--line-w) / 2);
   }
 
