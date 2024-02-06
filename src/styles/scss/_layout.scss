@@ -19,11 +19,19 @@ body {
 }
 
 
-.section-center{
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+.section-center {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
+.section-title {
+  font-size: 1.5rem;
+  color: white;
+  display: flex;
+  column-gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
 
 
 // NAVBAR
@@ -130,6 +138,8 @@ body {
   cursor: pointer;
   position: relative;
   padding: 0;
+  font-family: "JetBrains Mono", serif;
+  font-size: 12px;
   color: $accent-light-100;
   border-radius: 5px 0;
 
@@ -329,6 +339,13 @@ section.skills {
 
 
 @media only screen and (min-width: map-get($breakpoints, "md")) {
+
+  .section-title {
+    justify-content: start;
+    padding-left: 3rem;
+  }
+
+
   .navbar {
 
     .navbar-center {
@@ -338,6 +355,7 @@ section.skills {
       //border: 1px solid white;
     }
   }
+
 
   .section {
     margin: 0 auto;

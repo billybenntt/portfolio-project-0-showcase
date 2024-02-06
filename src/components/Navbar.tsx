@@ -14,7 +14,7 @@ function Navbar() {
         });
     }
 
-    const text = `\{\(\) \=\> Bill\}`
+    const text = `\{\(\) \=\> MyPortfolio\}`
 
     return (
         <nav className="navbar">

@@ -11,7 +11,7 @@
     "scss:watch": "sass src/styles/scss/input.scss src/styles/output.css --no-source-map --watch"
   },
   "dependencies": {
-    "lucide": "^0.323.0",
+    "lucide-react": "^0.323.0",
     "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18"

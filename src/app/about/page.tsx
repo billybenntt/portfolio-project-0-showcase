@@ -1,17 +1,22 @@
+import {User} from "lucide-react";
+
 function AboutPage() {
-  return (
-    <main className="offset">
-          <section className="hero section">
-                <div className="section-center ">
-                    <div>
-                        <h1 className="text-xl">About Page</h1>
-                    </div>
+    return (
+        <main className="offset">
+
+            <section className="section">
+                <div className="section-title">
+                    <User/>
+                    <h1>About Me</h1>
+                </div>
+
+                <div className="section-center">
                     <div className="desktop">
                     </div>
                 </div>
             </section>
-    </main>
-  )
+        </main>
+    )
 }
 
 export default AboutPage

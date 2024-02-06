@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import SkillCard from "@/components/SkillCard";
 import {data} from "@/data/data";
+import {Layers3, GraduationCap} from "lucide-react";
 
 function MainPage() {
     return (
@@ -23,8 +24,13 @@ function MainPage() {
 
             <section className="skills section">
 
-                <div className="skills-center section-center ">
+                <div className="section-center section-title">
+                    <Layers3/>
+                    <h1>My Tech Stack</h1>
+                </div>
 
+
+                <div className="skills-center section-center">
                     {data.map((item, index) => {
                         return <SkillCard key={index} {...item}/>
                     })}
@@ -35,6 +41,12 @@ function MainPage() {
             {/*TIMELINE 1 */}
 
             <section className="timeline-1 section">
+                <div className="section-center section-title">
+                    <GraduationCap/>
+                    <h1>My Experience</h1>
+                </div>
+
+
                 <div className="timeline-center section-center">
                     <div className="timeline-card">
                         <div className="date">2002</div>
