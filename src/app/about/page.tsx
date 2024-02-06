@@ -1,6 +1,6 @@
 function AboutPage() {
   return (
-    <>
+    <main className="offset">
           <section className="hero section">
                 <div className="section-center ">
                     <div>
@@ -10,7 +10,7 @@ function AboutPage() {
                     </div>
                 </div>
             </section>
-    </>
+    </main>
   )
 }
 

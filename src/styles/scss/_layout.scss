@@ -4,7 +4,7 @@
 
 body {
   @extend .text-md;
-  background-color: rgb(3, 7, 17);
+  background-color: rgba(1, 4, 9, 0.93);
   color: hsla(215.4 16.3% 56.9%);
 }
 
@@ -22,7 +22,7 @@ body {
   position: fixed;
   width: 100%;
   z-index: 99;
-  background-color: rgba(0, 0, 0, 0.65);
+background-color: rgba(1, 4, 9, 0.4);
   backdrop-filter: blur(8px);
   border-bottom: 1px dotted rgba(128, 128, 128, 0.74);
   padding: 1rem;
@@ -185,7 +185,6 @@ body {
 // SECTION HERO
 
 section.hero {
-  background-color: black;
   min-height: 200px;
   position: relative;
 

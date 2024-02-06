@@ -1,8 +1,8 @@
 function FAQPage() {
   return (
-    <>
+    <main className="offset">
           <section className="hero section">
-                <div className="section-center show-box">
+                <div className="section-center ">
                     <div>
                         <h1 className="text-xl">FAQ</h1>
                     </div>
@@ -10,7 +10,7 @@ function FAQPage() {
                     </div>
                 </div>
             </section>
-    </>
+    </main>
   )
 }
 
