@@ -1,11 +1,9 @@
-import {Lato} from 'next/font/google'
 import type {Metadata} from 'next'
 import '../styles/output.css'
 import React from "react";
 import Navbar from "@/components/Navbar";
+import {latoSerif} from "@/styles/fonts/fonts";
 
-
-const fontFamily = Lato({subsets: ['latin'], weight: ["400", "700"]})
 
 export const metadata: Metadata = {
     title: 'Portfolio Showcase',
@@ -21,7 +19,7 @@ type rootProps = {
 export default function RootLayout({children}: rootProps) {
     return (
         <html lang="en">
-        <body className={fontFamily.className}>
+        <body className={latoSerif.className}>
             <Navbar/>
             {children}
         </body>
