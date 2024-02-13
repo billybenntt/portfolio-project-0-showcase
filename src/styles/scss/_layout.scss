@@ -15,9 +15,8 @@ body {
 }
 
 .box {
-  margin: 10rem;
-  height: 100px;
-  width: 100px;
+  height: 500px;
+  width: 200px;
 }
 
 
@@ -218,8 +217,8 @@ section.skills {
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
-    max-width: 350px;
-    font-size: 16px;
+    width: 350px;
+    font-size: 1rem;
     font-weight: normal;
 
     .icon {
@@ -338,6 +337,12 @@ section.skills {
   }
 
 
+}
+
+.projects-center {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
 }
 
 

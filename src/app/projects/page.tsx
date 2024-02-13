@@ -10,8 +10,37 @@ function ProjectsPage() {
                     <h1>My Projects</h1>
                 </div>
 
-                <div className="section-center">
-                    <div className="desktop">
+                <div className="section-center projects-center">
+                    <div className="box d-border">
+                        <div>1</div>
+                        <div>1</div>
+                        <div>1</div>
+                        <div>1</div>
+                        <div>1</div>
+                        <div>1</div>
+                        <div>1</div>
+                    </div>
+
+
+                         <div className="box d-border">
+                        <div>1</div>
+                        <div>1</div>
+                        <div>1</div>
+                        <div>1</div>
+                        <div>1</div>
+                        <div>1</div>
+                        <div>1</div>
+                    </div>
+
+
+                         <div className="box d-border">
+                        <div>1</div>
+                        <div>1</div>
+                        <div>1</div>
+                        <div>1</div>
+                        <div>1</div>
+                        <div>1</div>
+                        <div>1</div>
                     </div>
                 </div>
             </section>

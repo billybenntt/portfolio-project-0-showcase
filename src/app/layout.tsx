@@ -4,7 +4,6 @@ import React from "react";
 import Navbar from "@/components/Navbar";
 import {latoSerif} from "@/styles/fonts/fonts";
 
-
 export const metadata: Metadata = {
     title: 'Portfolio Showcase',
     description: 'Bill Portfolio',

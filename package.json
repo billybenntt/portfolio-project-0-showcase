@@ -14,7 +14,8 @@
     "lucide-react": "^0.323.0",
     "next": "14.0.4",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "scroll-carousel-react": "^1.0.0"
   },
   "devDependencies": {
     "@types/node": "^20",

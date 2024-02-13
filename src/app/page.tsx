@@ -1,7 +1,11 @@
+'use client'
+
 import Image from 'next/image'
-import SkillCard from "@/components/SkillCard";
-import {data} from "@/data/data";
 import {Layers3, GraduationCap} from "lucide-react";
+import dynamic from 'next/dynamic';
+
+const ScrollCarousel = dynamic(() => import('@/components/ScrollCarouselComponent'), {ssr: false});
+
 
 function MainPage() {
     return (
@@ -23,18 +27,11 @@ function MainPage() {
             {/*SKILLS */}
 
             <section className="skills section">
-
                 <div className="section-center section-title">
                     <Layers3/>
                     <h1>My Tech Stack</h1>
                 </div>
-
-
-                <div className="skills-center section-center">
-                    {data.map((item, index) => {
-                        return <SkillCard key={index} {...item}/>
-                    })}
-                </div>
+                <ScrollCarousel/>
             </section>
 
 
@@ -49,7 +46,7 @@ function MainPage() {
 
                 <div className="timeline-center section-center">
                     <div className="timeline-card">
-                        <div className="date">2002</div>
+                        <div className="date">2020- Present</div>
                         <div className="title">Title 1</div>
                         <div className="descr">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas itaque hic
                             quibusdam fugiat est numquam harum, accusamus suscipit consequatur laboriosam!

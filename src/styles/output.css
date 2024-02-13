@@ -167,9 +167,8 @@ body {
 }
 
 .box {
-  margin: 10rem;
-  height: 100px;
-  width: 100px;
+  height: 500px;
+  width: 200px;
 }
 
 .section-center {
@@ -319,8 +318,8 @@ section.skills .skill-card {
   display: flex;
   flex-direction: column;
   row-gap: 1rem;
-  max-width: 350px;
-  font-size: 16px;
+  width: 350px;
+  font-size: 1rem;
   font-weight: normal;
 }
 section.skills .skill-card .icon {
@@ -413,6 +412,12 @@ section.skills .skills-center {
 .timeline-1 .timeline-card .descr, .timeline-2 .timeline-card .descr {
   padding-block-end: 1.5rem;
   font-weight: 300;
+}
+
+.projects-center {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
 }
 
 @media only screen and (min-width: 768px) {
