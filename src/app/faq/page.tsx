@@ -1,4 +1,9 @@
-import {MessageCircleQuestion } from "lucide-react";
+'use client'
+import dynamic from "next/dynamic";
+import {MessageCircleQuestion} from "lucide-react";
+
+const AccordionComponent = dynamic(() => import('@/components/AccordionComponent'), {ssr: false});
+
 
 function FAQPage() {
     return (
@@ -6,13 +11,12 @@ function FAQPage() {
 
             <section className="section">
                 <div className="section-title">
-                    <MessageCircleQuestion />
+                    <MessageCircleQuestion/>
                     <h1>Frequent Asked Questions</h1>
                 </div>
 
                 <div className="section-center">
-                    <div className="desktop">
-                    </div>
+                    <AccordionComponent/>
                 </div>
             </section>
         </main>
