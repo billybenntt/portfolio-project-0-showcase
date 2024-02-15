@@ -3,14 +3,18 @@ import Image from 'next/image'
 function SkillCard(props: any) {
 
 
+    const {title, description, icons} = props
 
-    const { title, description, icons } = props
+
+    const iconList = icons.map((_: string, index: number) => {
+        return <Image key={index} src={`icons/${icons[index]}`} height={40} width={40} alt="icon"></Image>
+    })
+
 
     return (
         <div className="skill-card">
             <span className="icon">
-                <Image src={`icons/${icons[0]}`} height={40} width={40} alt="icon"/>
-                <Image src={`icons/${icons[1]}`}  height={40} width={40} alt="icon"/>
+                {iconList}
             </span>
             <h3 className="text-md">{title}</h3>
             <p>

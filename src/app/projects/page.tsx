@@ -1,4 +1,5 @@
-import {Briefcase} from "lucide-react";
+import {Briefcase, Radio, FolderGit2} from "lucide-react";
+import Image from 'next/image'
 
 function ProjectsPage() {
     return (
@@ -11,37 +12,113 @@ function ProjectsPage() {
                 </div>
 
                 <div className="section-center projects-center">
-                    <div className="box d-border">
-                        <div>1</div>
-                        <div>1</div>
-                        <div>1</div>
-                        <div>1</div>
-                        <div>1</div>
-                        <div>1</div>
-                        <div>1</div>
+
+
+                    <div className="project-card">
+                        <p>Project 1</p>
+                        <p>Calculator App</p>
+                        <div className="d-border">
+                            <Image src="/capture.jpg" width={250} height={300} alt="a"></Image>
+                        </div>
+                        <div className="card-links">
+                            <div>
+                                <Radio/>
+                                <p>Live Website</p>
+                            </div>
+                            <div>
+                                <FolderGit2/>
+                                <p>Source Code</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="project-card">
+                        <p>Project 1</p>
+                        <p>Calculator App</p>
+                        <div className="d-border">
+                            <Image src="/capture.jpg" width={250} height={300} alt="a"></Image>
+                        </div>
+                        <div className="card-links">
+                            <div>
+                                <Radio/>
+                                <p>Live Website</p>
+                            </div>
+                            <div>
+                                <FolderGit2/>
+                                <p>Source Code</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="project-card">
+                        <p>Project 1</p>
+                        <p>Calculator App</p>
+                        <div className="d-border">
+                            <Image src="/capture.jpg" width={250} height={300} alt="a"></Image>
+                        </div>
+                        <div className="card-links">
+                            <div>
+                                <Radio/>
+                                <p>Live Website</p>
+                            </div>
+                            <div>
+                                <FolderGit2/>
+                                <p>Source Code</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="project-card">
+                        <p>Project 1</p>
+                        <p>Calculator App</p>
+                        <div className="d-border">
+                            <Image src="/capture.jpg" width={250} height={300} alt="a"></Image>
+                        </div>
+                        <div className="card-links">
+                            <div>
+                                <Radio/>
+                                <p>Live Website</p>
+                            </div>
+                            <div>
+                                <FolderGit2/>
+                                <p>Source Code</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="project-card">
+                        <p>Project 1</p>
+                        <p>Calculator App</p>
+                        <div className="d-border">
+                            <Image src="/capture.jpg" width={250} height={300} alt="a"></Image>
+                        </div>
+                        <div className="card-links">
+                            <div>
+                                <Radio/>
+                                <p>Live Website</p>
+                            </div>
+                            <div>
+                                <FolderGit2/>
+                                <p>Source Code</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="project-card">
+                        <p>Project 1</p>
+                        <p>Calculator App</p>
+                        <div className="d-border">
+                            <Image src="/capture.jpg" width={250} height={300} alt="a"></Image>
+                        </div>
+                        <div className="card-links">
+                            <div>
+                                <Radio/>
+                                <p>Live Website</p>
+                            </div>
+                            <div>
+                                <FolderGit2/>
+                                <p>Source Code</p>
+                            </div>
+                        </div>
                     </div>
 
 
-                         <div className="box d-border">
-                        <div>1</div>
-                        <div>1</div>
-                        <div>1</div>
-                        <div>1</div>
-                        <div>1</div>
-                        <div>1</div>
-                        <div>1</div>
-                    </div>
-
-
-                         <div className="box d-border">
-                        <div>1</div>
-                        <div>1</div>
-                        <div>1</div>
-                        <div>1</div>
-                        <div>1</div>
-                        <div>1</div>
-                        <div>1</div>
-                    </div>
                 </div>
             </section>
         </main>

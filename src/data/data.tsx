@@ -52,7 +52,7 @@ export const data =
             "title": "Routing",
             "icons": [
                 "react_router.svg",
-                "react_router.svg",
+                "next.svg",
             ],
             "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam earum eius error exercitationem fugit, laudantium minima placeat quaerat quia"
         },
@@ -70,8 +70,17 @@ export const data =
             "title": "BAAS",
             "icons": [
                 "supabase.svg",
-                "pocketbase.svg",
+            ],
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam earum eius error exercitationem fugit, laudantium minima placeat quaerat quia"
+        },
+        {
+            "id": 9,
+            "title": "API Testing",
+            "icons": [
+                "postman.svg",
             ],
             "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam earum eius error exercitationem fugit, laudantium minima placeat quaerat quia"
         }
+
+
     ]

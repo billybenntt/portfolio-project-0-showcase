@@ -12,7 +12,6 @@ const ScrollCarouselComponent = () => {
             speed={10}
         >
 
-
             {data.map((item, index) => {
                 return <SkillCard key={index} {...item}/>
             })}

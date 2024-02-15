@@ -54,7 +54,7 @@ function MainPage() {
                     </div>
 
                     <div className="timeline-card">
-                        <div className="date">2007</div>
+                        <div className="date">2018-2020</div>
                         <div className="title">Title 2</div>
                         <div className="descr">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos adipisci
                             nobis
@@ -62,7 +62,7 @@ function MainPage() {
                         </div>
                     </div>
                     <div className="timeline-card">
-                        <div className="date">2012</div>
+                        <div className="date">2016-2018</div>
                         <div className="title">Title 3</div>
                         <div className="descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga minima
                             consequuntur soluta placeat iure totam commodi repellendus ea delectus, libero fugit quod
@@ -70,7 +70,7 @@ function MainPage() {
                         </div>
                     </div>
                     <div className="timeline-card">
-                        <div className="date">2017</div>
+                        <div className="date">2012-2016</div>
                         <div className="title">Title 4</div>
                         <div className="descr">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit,
                             cumque.

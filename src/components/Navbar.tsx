@@ -6,7 +6,7 @@ import Link from "next/link";
 
 function Navbar() {
 
-    const [open, setOpen] = useState(true);
+    const [open, setOpen] = useState(false);
 
     const handleToggle = () => {
         setOpen((prevState) => {
@@ -19,11 +19,16 @@ function Navbar() {
     return (
         <nav className="navbar">
             <div className="navbar-center">
-                <DBorder>
-                    <div className="navbar__logo">
-                        <span>{text}</span>
-                    </div>
-                </DBorder>
+
+                <Link href={"/"}>
+                    <DBorder>
+                        <div className="navbar__logo">
+                            <span>{text}</span>
+                        </div>
+                    </DBorder>
+
+                </Link>
+
 
                 <div className="navbar__menu desktop">
                     <div className="navbar__menu-center">
