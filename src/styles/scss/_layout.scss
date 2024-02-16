@@ -371,6 +371,7 @@ section.skills {
   .question {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     border: 1px solid white;
     border-radius: $rounded-md;
     font-size: 1rem;
@@ -379,11 +380,20 @@ section.skills {
     text-align: start;
     color: $accent-light-100;
     width: 100%;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.8rem;
   }
 
+  .question[data-state='open'] > .icon-open {
+    display: none;
+  }
+
+  .question[data-state='closed'] > .icon-close {
+    display: none;
+  }
+
+
   .answer {
-    padding: 1rem;
+    padding: 1.5rem;
 
   }
 
@@ -462,11 +472,9 @@ section.skills {
   }
 
 
-  .accordion-center{
+  .accordion-center {
     width: $max-w-md;
   }
-
-
 
 
   @media only screen and (min-width: map-get($breakpoints, "lg")) {

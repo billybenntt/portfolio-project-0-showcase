@@ -446,6 +446,7 @@ section.skills .skills-center {
 .accordion-center .question {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   border: 1px solid white;
   border-radius: 6px;
   font-size: 1rem;
@@ -454,10 +455,16 @@ section.skills .skills-center {
   text-align: start;
   color: #FFFFFF;
   width: 100%;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.8rem;
+}
+.accordion-center .question[data-state=open] > .icon-open {
+  display: none;
+}
+.accordion-center .question[data-state=closed] > .icon-close {
+  display: none;
 }
 .accordion-center .answer {
-  padding: 1rem;
+  padding: 1.5rem;
 }
 
 @media only screen and (min-width: 768px) {
