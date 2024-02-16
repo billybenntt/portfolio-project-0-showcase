@@ -19,7 +19,6 @@ body {
   width: 200px;
 }
 
-
 .section-center {
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -131,10 +130,7 @@ body {
 
 }
 
-
 // FANCY BORDER
-
-
 .d-border {
   cursor: pointer;
   position: relative;
@@ -192,6 +188,7 @@ body {
 }
 
 
+// HERO SECTION
 section.hero {
   .section-center {
     min-height: 350px;
@@ -203,6 +200,7 @@ section.hero {
 
 }
 
+// SKILLS SECTION
 section.skills {
 
   .skills-center {
@@ -241,12 +239,8 @@ section.skills {
 
 }
 
-
-// TIMELINE
-
-
+// TIMELINE SECTION
 .timeline-1, .timeline-2 {
-
   .timeline-center {
     --col-gap: 2rem;
     --row-gap: 2rem;
@@ -340,6 +334,8 @@ section.skills {
 
 }
 
+
+// PROJECTS PAGE
 .projects-center {
   display: flex;
   justify-content: center;
@@ -347,7 +343,6 @@ section.skills {
   gap: 1.5rem;
   padding: 3rem 0;
 }
-
 
 .project-card {
   padding: 1rem;
@@ -362,6 +357,37 @@ section.skills {
   display: flex;
   justify-content: space-evenly;
   gap: 1rem;
+}
+
+
+// FAQ PAGE
+
+.accordion-center {
+  margin: 0 auto;
+  width: $max-w-sm;
+  display: flex;
+  flex-direction: column;
+
+  .question {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid white;
+    border-radius: $rounded-md;
+    font-size: 1rem;
+    background-color: $accent-dark-200;
+    padding: 0.8rem;
+    text-align: start;
+    color: $accent-light-100;
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  .answer {
+    padding: 1rem;
+
+  }
+
+
 }
 
 
@@ -434,6 +460,13 @@ section.skills {
 
 
   }
+
+
+  .accordion-center{
+    width: $max-w-md;
+  }
+
+
 
 
   @media only screen and (min-width: map-get($breakpoints, "lg")) {

@@ -437,6 +437,29 @@ section.skills .skills-center {
   gap: 1rem;
 }
 
+.accordion-center {
+  margin: 0 auto;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+.accordion-center .question {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid white;
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: #212121;
+  padding: 0.8rem;
+  text-align: start;
+  color: #FFFFFF;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+.accordion-center .answer {
+  padding: 1rem;
+}
+
 @media only screen and (min-width: 768px) {
   .section-title {
     justify-content: start;
@@ -479,6 +502,9 @@ section.skills .skills-center {
   }
   .timeline-1 .timeline-card:nth-child(odd) .date, .timeline-2 .timeline-card:nth-child(odd) .date {
     border-radius: 0 calc(var(--dateH) / 2) calc(var(--dateH) / 2) 0;
+  }
+  .accordion-center {
+    width: 850px;
   }
 }
 @media only screen and (min-width: 768px) and (min-width: 1024px) {
