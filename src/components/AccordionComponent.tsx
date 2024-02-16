@@ -1,5 +1,6 @@
 import * as Accordion from '@radix-ui/react-accordion';
 import {PlusIcon, MinusIcon} from 'lucide-react'
+import {kurewaSerif} from "@/styles/fonts/fonts";
 
 function AccordionComponent() {
     return (
@@ -8,13 +9,13 @@ function AccordionComponent() {
                 <Accordion.Item value="item-1">
                     <Accordion.Header>
                         <Accordion.Trigger className="question">
-                            <span>Lorem ipsum dolor sit amet, elit. Consequuntur, tempore?</span>
+                            <span className={kurewaSerif.className}>中文可以嗎?</span>
                             <PlusIcon className="icon-open"/>
                             <MinusIcon className="icon-close"/>
                         </Accordion.Trigger>
                     </Accordion.Header>
                     <Accordion.Content className="answer">
-                        Lorem ipsum dolor sit amet.
+                        <span className={kurewaSerif.className}>非常可以的</span>
                     </Accordion.Content>
                 </Accordion.Item>
                 <Accordion.Item value="item-2">
