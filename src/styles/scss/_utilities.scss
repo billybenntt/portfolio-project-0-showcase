@@ -28,19 +28,68 @@
 .show-box {
   border: 1px dotted white;
 }
-.icon-1  {
+
+.icon-1 {
   width: 50px;
-  filter:$bg-filter-1;
+  filter: $bg-filter-1;
 }
 
-.icon-2{
+.icon-2 {
   width: 100px;
-  filter:$bg-filter-2;
+  filter: $bg-filter-2;
+}
+
+.btn-container {
+  display: flex;
+  column-gap: 0.5rem;
 }
 
 
+.btn {
+  border: transparent;
+  cursor: pointer;
 
+  padding: 0.3rem 0.75rem;
+  border-radius: $rounded-sm;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  transition: $transition-1;
+}
 
+.btn-primary:hover {
+  background-color: $primary-purple-200;
+}
+
+.btn-secondary:hover {
+  background-color: $primary-green-200;
+}
+
+.btn-primary {
+  background-color: $primary-purple-100;
+  color: $accent-dark-300;
+}
+
+.btn-primary:active {
+  outline: 1px dashed $primary-purple-200;
+  color: $primary-purple-200;
+}
+
+.btn-secondary {
+  background-color: $primary-green-100;
+  color: $accent-dark-300;
+}
+
+.btn-secondary:active {
+  outline: 1px dashed $primary-green-200;
+  color: $primary-green-200;
+}
+
+.btn:active {
+  background: transparent;
+}
 
 @media only screen and (min-width: map-get($breakpoints, "sm")) {
   .mobile {
@@ -50,7 +99,6 @@
     display: none;
   }
 }
-
 
 
 @media only screen and (min-width: map-get($breakpoints, "md")) {

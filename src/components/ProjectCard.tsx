@@ -7,7 +7,7 @@ function ProjectCard() {
         <article className="project-card">
             <div className="project-image">
 
-                <Image src="/background-project.png" width={390} height={100} alt=""/>
+                <Image src="/bg-1.png" width={390} height={200} alt=""/>
 
             </div>
             <div className="project-content">
@@ -15,8 +15,15 @@ function ProjectCard() {
                 <h5>Age Calculator App</h5>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
 
-                <div>
-
+                <div className="btn-container">
+                    <button className="btn btn-primary">
+                        <Radio size={20}/>
+                        <span>Live Site</span>
+                    </button>
+                    <button className="btn btn-secondary">
+                        <FolderGit2 size={20}/>
+                        <span>Source Code</span>
+                    </button>
                 </div>
 
             </div>
