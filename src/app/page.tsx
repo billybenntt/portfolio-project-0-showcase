@@ -1,7 +1,7 @@
 'use client'
 
 import Image from 'next/image'
-import {Layers3, GraduationCap} from "lucide-react";
+import {Layers3, GraduationCap, Hand} from "lucide-react";
 import dynamic from 'next/dynamic';
 
 const ScrollCarousel = dynamic(() => import('@/components/ScrollCarouselComponent'), {ssr: false});
@@ -12,14 +12,23 @@ function MainPage() {
         <main className="offset">
             {/*HERO */}
             <section className="hero section">
-                <div className="section-center ">
-                    <div>
-                        <h1 className="text-xl">Hello my name is Bill</h1>
-                        <h3 className="text-md">Front-End Developer</h3>
+                <div className="section-center">
+                    <div className="hero-text">
+                        <h1 className="text-xxl">
+                            <span>
+                                Hello
+                            </span>
+                            <div className="wave">
+                                <Hand size={40} className="icon"/>
+                            </div>
+                        </h1>
+                        <h3 className="text-lg">My name is Bill</h3>
+                        <h3 className="text-lg">Front-End Developer</h3>
                         <p>Turning Ideas Into Interactive Reality</p>
                     </div>
+
                     <div className="desktop">
-                        <Image src="image-1.svg" alt="as" height={500} width={500}/>
+                        <Image src="image-3.svg" alt="section" height={400} width={400}/>
                     </div>
                 </div>
             </section>
