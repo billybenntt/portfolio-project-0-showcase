@@ -4,23 +4,23 @@ import Image from 'next/image'
 
 function ProjectCard() {
     return (
-        <div className="project-card">
-            <p>Project 1</p>
-            <p>Calculator App</p>
-            <div className="d-border">
-                <Image src="/capture.jpg" width={250} height={300} alt="a"></Image>
+        <article className="project-card">
+            <div className="project-image">
+
+                <Image src="/background-project.png" width={390} height={100} alt=""/>
+
             </div>
-            <div className="card-links">
+            <div className="project-content">
+                <h3>Project 01</h3>
+                <h5>Age Calculator App</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+
                 <div>
-                    <Radio/>
-                    <p>Live Website</p>
+
                 </div>
-                <div>
-                    <FolderGit2/>
-                    <p>Source Code</p>
-                </div>
+
             </div>
-        </div>
+        </article>
     )
 }
 

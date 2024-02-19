@@ -8,12 +8,10 @@ const ScrollCarouselComponent = () => {
             autoplay
             autoplaySpeed={50}
             smartSpeed={true}
-            speed={10}
-        >
+            speed={10}>
             {data.map((item, index) => {
                 return <SkillCard key={index} {...item}/>
             })}
-
         </ScrollCarousel>
     );
 };
