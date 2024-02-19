@@ -21,8 +21,7 @@ export default function RootLayout({children}: rootProps) {
         <body className={latoSerif.className}>
             <Navbar/>
             {children}
-
-        </body>
+            </body>
         </html>
     )
 }

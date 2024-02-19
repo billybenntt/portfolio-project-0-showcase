@@ -48,14 +48,14 @@
 .btn {
   border: transparent;
   cursor: pointer;
-
+  font-family: "JetBrains Mono", serif ;
   padding: 0.3rem 0.75rem;
   border-radius: $rounded-sm;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  font-size: 0.8rem;
+  font-size: 0.6rem;
   transition: $transition-1;
 }
 
@@ -64,12 +64,12 @@
 }
 
 .btn-secondary:hover {
-  background-color: $primary-green-200;
+  background-color: $primary-green-400;
 }
 
 .btn-primary {
   background-color: $primary-purple-100;
-  color: $accent-dark-300;
+  color: $accent-dark-200;
 }
 
 .btn-primary:active {
@@ -78,13 +78,13 @@
 }
 
 .btn-secondary {
-  background-color: $primary-green-100;
-  color: $accent-dark-300;
+  background-color: $primary-green-200;
+  color: $accent-dark-200;
 }
 
 .btn-secondary:active {
-  outline: 1px dashed $primary-green-200;
-  color: $primary-green-200;
+  outline: 1px dashed $primary-green-400;
+  color: $primary-green-400;
 }
 
 .btn:active {

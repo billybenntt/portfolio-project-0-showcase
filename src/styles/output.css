@@ -80,13 +80,14 @@ a {
 .btn {
   border: transparent;
   cursor: pointer;
+  font-family: "JetBrains Mono", serif;
   padding: 0.3rem 0.75rem;
   border-radius: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  font-size: 0.8rem;
+  font-size: 0.6rem;
   transition: 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
 }
 
@@ -95,12 +96,12 @@ a {
 }
 
 .btn-secondary:hover {
-  background-color: #aeffda;
+  background-color: #38be83;
 }
 
 .btn-primary {
   background-color: #b2bbf0;
-  color: #000000;
+  color: #212121;
 }
 
 .btn-primary:active {
@@ -109,13 +110,13 @@ a {
 }
 
 .btn-secondary {
-  background-color: #d4fcb5;
-  color: #000000;
+  background-color: #aeffda;
+  color: #212121;
 }
 
 .btn-secondary:active {
-  outline: 1px dashed #aeffda;
-  color: #aeffda;
+  outline: 1px dashed #38be83;
+  color: #38be83;
 }
 
 .btn:active {
@@ -233,13 +234,14 @@ a {
 .btn {
   border: transparent;
   cursor: pointer;
+  font-family: "JetBrains Mono", serif;
   padding: 0.3rem 0.75rem;
   border-radius: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  font-size: 0.8rem;
+  font-size: 0.6rem;
   transition: 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
 }
 
@@ -248,12 +250,12 @@ a {
 }
 
 .btn-secondary:hover {
-  background-color: #aeffda;
+  background-color: #38be83;
 }
 
 .btn-primary {
   background-color: #b2bbf0;
-  color: #000000;
+  color: #212121;
 }
 
 .btn-primary:active {
@@ -262,13 +264,13 @@ a {
 }
 
 .btn-secondary {
-  background-color: #d4fcb5;
-  color: #000000;
+  background-color: #aeffda;
+  color: #212121;
 }
 
 .btn-secondary:active {
-  outline: 1px dashed #aeffda;
-  color: #aeffda;
+  outline: 1px dashed #38be83;
+  color: #38be83;
 }
 
 .btn:active {

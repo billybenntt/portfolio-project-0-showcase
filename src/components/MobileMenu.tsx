@@ -1,7 +1,7 @@
 
 
 
-function NavbarMenuIcon() {
+function MobileMenu() {
   return (
     <>
       <h2>NavbarMenu Component</h2>
@@ -9,4 +9,4 @@ function NavbarMenuIcon() {
   )
 }
 
-export default NavbarMenuIcon
+export default MobileMenu
