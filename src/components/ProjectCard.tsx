@@ -1,13 +1,13 @@
 import {Radio, FolderGit2} from "lucide-react";
 import Image from 'next/image'
-
+import {jetBrainsMono} from "@/styles/fonts/fonts";
 
 function ProjectCard() {
     return (
         <article className="project-card">
             <div className="project-image">
 
-                <Image src="/bg-1.png" width={390} height={200} alt=""/>
+                <Image src="/bg-3.png" width={390} height={200} alt=""/>
 
             </div>
             <div className="project-content">
@@ -16,14 +16,24 @@ function ProjectCard() {
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
 
                 <div className="btn-container">
-                    <button className="btn btn-primary">
-                        <Radio size={20}/>
-                        <span>Live Site</span>
-                    </button>
-                    <button className="btn btn-secondary">
-                        <FolderGit2 size={20}/>
-                        <span>Source Code</span>
-                    </button>
+
+                    <a href="https://www.google.com" target="_blank">
+                        <button className="btn btn-primary">
+                            <Radio size={20}/>
+                            <span className={jetBrainsMono.className}>
+                            <span>Live Site</span>
+                        </span>
+                        </button>
+                    </a>
+
+                    <a href="https://www.github.com" target="_blank">
+                        <button className="btn btn-secondary">
+                            <FolderGit2 size={20}/>
+                            <span className={jetBrainsMono.className}>
+                            <span>Source Code</span>
+                        </span>
+                        </button>
+                    </a>
                 </div>
 
             </div>

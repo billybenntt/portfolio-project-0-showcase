@@ -191,10 +191,14 @@ body {
 section.hero {
   .section-center {
     text-align: center;
-    min-height: 300px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+
+    img {
+      width: 400px;
+      height: 400px;
+    }
 
   }
 
@@ -367,6 +371,7 @@ section.skills {
 
     img {
       width: 100%;
+      height: auto;
     }
 
   }
@@ -394,6 +399,7 @@ section.skills {
 
 .project-card:hover {
   transform: scale(1.05);
+  box-shadow: $box-shadow-1;
 }
 
 

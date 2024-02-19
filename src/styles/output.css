@@ -88,7 +88,7 @@ a {
   justify-content: center;
   gap: 0.5rem;
   font-size: 0.6rem;
-  transition: 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1) 0s;
 }
 
 .btn-primary:hover {
@@ -242,7 +242,7 @@ a {
   justify-content: center;
   gap: 0.5rem;
   font-size: 0.6rem;
-  transition: 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1) 0s;
 }
 
 .btn-primary:hover {
@@ -480,10 +480,13 @@ body {
 
 section.hero .section-center {
   text-align: center;
-  min-height: 300px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+}
+section.hero .section-center img {
+  width: 400px;
+  height: 400px;
 }
 section.hero .hero-text {
   display: flex;
@@ -621,6 +624,7 @@ section.skills .skills-center {
 }
 .project-card .project-image img {
   width: 100%;
+  height: auto;
 }
 .project-card .project-content {
   padding: 1rem;
@@ -638,6 +642,7 @@ section.skills .skills-center {
 
 .project-card:hover {
   transform: scale(1.05);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.3);
 }
 
 .accordion-center {

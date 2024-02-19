@@ -4,8 +4,8 @@ export const data =
             "id": 1,
             "title": "The Essentials",
             "icons": [
-                "javascript.svg",
-                "typescript.svg"
+                "ras.svg",
+                "tas.svg"
             ],
             "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam earum eius error exercitationem fugit, laudantium minima placeat quaerat quia"
         },

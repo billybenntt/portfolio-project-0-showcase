@@ -28,7 +28,7 @@ function MainPage() {
                     </div>
 
                     <div className="desktop">
-                        <Image src="image-3.svg" alt="section" height={400} width={400}/>
+                        <Image src="image-3.svg" alt="section" height={0} width={0}/>
                     </div>
                 </div>
             </section>
