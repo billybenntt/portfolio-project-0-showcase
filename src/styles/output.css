@@ -80,13 +80,13 @@ a {
 .btn {
   border: transparent;
   cursor: pointer;
-  font-family: "JetBrains Mono", serif;
   padding: 0.3rem 0.75rem;
   border-radius: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
+  font-weight: bold;
   font-size: 0.6rem;
   transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1) 0s;
 }
@@ -234,13 +234,13 @@ a {
 .btn {
   border: transparent;
   cursor: pointer;
-  font-family: "JetBrains Mono", serif;
   padding: 0.3rem 0.75rem;
   border-radius: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
+  font-weight: bold;
   font-size: 0.6rem;
   transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1) 0s;
 }
@@ -432,6 +432,25 @@ body {
 .navbar .navbar__logo {
   padding: 0.4rem;
   min-width: 50px;
+}
+
+.mobile-menu button {
+  all: unset;
+  cursor: pointer;
+}
+
+.menu-content {
+  background-color: rgba(10, 4, 4, 0.48);
+  color: white;
+  padding: 2rem;
+  z-index: 98;
+  width: 100vw;
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(128, 128, 128, 0.24);
+}
+.menu-content .mobile-menu_item {
+  padding: 1rem;
+  text-align: center;
 }
 
 .d-border {
@@ -693,6 +712,9 @@ section.skills .skills-center {
     column-gap: 5rem;
     justify-content: start;
     width: 992px;
+  }
+  .navbar__mobile-menu {
+    display: none;
   }
   .section {
     margin: 0 auto;

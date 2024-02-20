@@ -66,10 +66,6 @@ body {
   .navbar__toggle {
     align-items: center;
 
-    .menu-container {
-
-    }
-
 
     .menu-icon {
       display: flex;
@@ -118,7 +114,6 @@ body {
       transform: translate(22px, -9px) rotatez(45deg);
     }
 
-
   }
 
   .navbar__logo {
@@ -126,8 +121,36 @@ body {
     min-width: 50px;
   }
 
+}
+
+
+.mobile-menu {
+
+  button {
+    all: unset;
+    cursor: pointer;
+  }
+
 
 }
+
+.menu-content {
+  background-color: rgba(10, 4, 4, 0.48);
+  color: white;
+  padding: 2rem;
+  z-index: 98;
+  width: 100vw;
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(128, 128, 128, 0.24);
+
+  .mobile-menu_item {
+    padding: 1rem;
+    text-align: center;
+  }
+
+
+}
+
 
 // FANCY BORDER
 .d-border {
@@ -474,6 +497,9 @@ section.skills {
     }
   }
 
+  .navbar__mobile-menu {
+    display: none;
+  }
 
   .section {
     margin: 0 auto;

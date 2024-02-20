@@ -1,12 +1,88 @@
-
-
+import * as DropdownMenu from '@radix-ui/react-dropdown-menu';
+import {Grip} from 'lucide-react';
+import Link from "next/link";
+import {useEffect, useState} from 'react';
 
 function MobileMenu() {
-  return (
-    <>
-      <h2>NavbarMenu Component</h2>
-    </>
-  )
+    const [menuOpen, setMenuOpen] = useState(false);
+
+    function toggleMenu() {
+        setMenuOpen(prevState => !prevState);
+    }
+
+    function closeMenu() {
+        setMenuOpen(false);
+    }
+
+    useEffect(() => {
+        function handleResize() {
+            closeMenu();
+        }
+
+        window.addEventListener('resize', handleResize);
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
+
+    return (
+        <div className="mobile mobile-menu">
+            <DropdownMenu.Root
+                modal={true}
+                open={menuOpen}
+                onOpenChange={toggleMenu}>
+                <DropdownMenu.Trigger asChild>
+                    <button aria-label="Customise options">
+                        <Grip/>
+                    </button>
+                </DropdownMenu.Trigger>
+
+                <DropdownMenu.Portal>
+                    <DropdownMenu.Content
+                        sideOffset={18}
+                        hideWhenDetached={true}
+                        sticky="partial"
+                        className="menu-content">
+
+                        <DropdownMenu.Item className="mobile-menu_item">
+                            <Link href="/" onClick={closeMenu}>
+                                <span>Home</span>
+                            </Link>
+                        </DropdownMenu.Item>
+
+
+                        <DropdownMenu.Item className="mobile-menu_item">
+                            <Link href="/projects" onClick={closeMenu}>
+                                <span>Projects</span>
+                            </Link>
+                        </DropdownMenu.Item>
+
+                        <DropdownMenu.Item className="mobile-menu_item">
+                            <Link href="/faq" onClick={closeMenu}>
+                                <span>FAQ</span>
+                            </Link>
+                        </DropdownMenu.Item>
+
+                        <DropdownMenu.Item className="mobile-menu_item">
+                            <Link href="/about" onClick={closeMenu}>
+                                <span>About</span>
+                            </Link>
+                        </DropdownMenu.Item>
+
+                        <DropdownMenu.Item className="mobile-menu_item">
+                            <Link href="/contact" onClick={closeMenu}>
+                                <span>Contact</span>
+                            </Link>
+                        </DropdownMenu.Item>
+
+
+                        {/* Other menu items */}
+                    </DropdownMenu.Content>
+                </DropdownMenu.Portal>
+            </DropdownMenu.Root>
+        </div>
+    );
 }
 
-export default MobileMenu
+export default MobileMenu;

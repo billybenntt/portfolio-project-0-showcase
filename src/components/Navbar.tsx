@@ -2,7 +2,7 @@
 import {useState} from "react";
 import DBorder from "@/components/DBorder";
 import Link from "next/link";
-import {Grip} from 'lucide-react'
+import MobileMenu from "@/components/MobileMenu";
 
 function Navbar() {
 
@@ -50,18 +50,7 @@ function Navbar() {
                     </div>
                 </div>
 
-                <div className={`navbar__toggle mobile`} onClick={handleToggle}>
-                    <div className="menu-container">
-                        <div className={`menu-icon ${open ? "open" : ""}`}>
-                            {/*<span className="line"></span>*/}
-                            {/*<span className="line"></span>*/}
-                            {/*<span className="line"></span>*/}
-
-                            <Grip size={32} />
-                        </div>
-                    </div>
-                </div>
-
+                <MobileMenu/>
 
             </div>
         </nav>
