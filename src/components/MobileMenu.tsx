@@ -2,9 +2,11 @@ import * as DropdownMenu from '@radix-ui/react-dropdown-menu';
 import {Grip} from 'lucide-react';
 import Link from "next/link";
 import {useEffect, useState} from 'react';
+import {usePathname} from 'next/navigation'
 
 function MobileMenu() {
     const [menuOpen, setMenuOpen] = useState(false);
+    const pathname = usePathname()
 
     function toggleMenu() {
         setMenuOpen(prevState => !prevState);
@@ -46,32 +48,32 @@ function MobileMenu() {
                         className="menu-content">
 
                         <DropdownMenu.Item className="mobile-menu_item">
-                            <Link href="/" onClick={closeMenu}>
+                            <Link href="/" onClick={closeMenu} className={`menu__item ${pathname === '/' ? 'active' : ''}`}>
                                 <span>Home</span>
                             </Link>
                         </DropdownMenu.Item>
 
 
                         <DropdownMenu.Item className="mobile-menu_item">
-                            <Link href="/projects" onClick={closeMenu}>
+                            <Link href="/projects" onClick={closeMenu} className={`menu__item ${pathname === '/projects' ? 'active' : ''}`}>
                                 <span>Projects</span>
                             </Link>
                         </DropdownMenu.Item>
 
                         <DropdownMenu.Item className="mobile-menu_item">
-                            <Link href="/faq" onClick={closeMenu}>
+                            <Link href="/faq" onClick={closeMenu} className={`menu__item ${pathname === '/faq' ? 'active' : ''}`}>
                                 <span>FAQ</span>
                             </Link>
                         </DropdownMenu.Item>
 
                         <DropdownMenu.Item className="mobile-menu_item">
-                            <Link href="/about" onClick={closeMenu}>
+                            <Link href="/about" onClick={closeMenu} className={`menu__item ${pathname === '/about' ? 'active' : ''}`}>
                                 <span>About</span>
                             </Link>
                         </DropdownMenu.Item>
 
                         <DropdownMenu.Item className="mobile-menu_item">
-                            <Link href="/contact" onClick={closeMenu}>
+                            <Link href="/contact" onClick={closeMenu} className={`menu__item ${pathname === '/contact' ? 'active' : ''}`}>
                                 <span>Contact</span>
                             </Link>
                         </DropdownMenu.Item>

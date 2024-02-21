@@ -63,59 +63,6 @@ body {
   }
 
 
-  .navbar__toggle {
-    align-items: center;
-
-
-    .menu-icon {
-      display: flex;
-      flex-direction: column;
-      cursor: pointer;
-    }
-
-    .menu-icon .line {
-      background: #fff;
-      border-radius: 15px;
-      height: 5px;
-      margin: 5px 0;
-      transition: $transition-1;
-    }
-
-
-    span:nth-of-type(1) {
-      width: 50%;
-    }
-
-    span:nth-of-type(2) {
-      width: 100%;
-    }
-
-
-    span:nth-of-type(3) {
-      width: 75%;
-    }
-
-
-    .menu-icon.open > span:nth-of-type(1) {
-      /*transform-origin: bottom;*/
-      transform: rotatez(45deg) translate(8px, 0px)
-    }
-
-
-    .menu-icon.open > span:nth-of-type(2) {
-      /*transform-origin: top;*/
-      transform: rotatez(-45deg)
-    }
-
-
-    .menu-icon.open > span:nth-of-type(3) {
-      /*transform-origin: bottom;*/
-      width: 50%;
-      transform: translate(22px, -9px) rotatez(45deg);
-    }
-
-  }
-
   .navbar__logo {
     padding: 0.4rem;
     min-width: 50px;
@@ -125,10 +72,28 @@ body {
 
 
 .mobile-menu {
-
   button {
     all: unset;
     cursor: pointer;
+  }
+}
+
+.menu__item {
+  transition: $transition-4;
+  padding: 0.3rem;
+  border-radius: 4px;
+  outline: 2px dashed transparent;
+
+
+  &.active {
+    color: black;
+    background-color: white;
+  }
+
+  &:hover {
+    outline: 2px dashed white;
+    color: white;
+    background-color: transparent;
   }
 
 
@@ -137,15 +102,21 @@ body {
 .menu-content {
   background-color: rgba(10, 4, 4, 0.48);
   color: white;
-  padding: 2rem;
+  padding: 3rem;
   z-index: 98;
   width: 100vw;
   backdrop-filter: blur(8px);
   border: 1px solid rgba(128, 128, 128, 0.24);
 
   .mobile-menu_item {
-    padding: 1rem;
+    padding: 1rem 0;
     text-align: center;
+
+    .menu__item {
+      display: flex;
+      justify-content: center;
+    }
+
   }
 
 

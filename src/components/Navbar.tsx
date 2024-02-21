@@ -1,18 +1,12 @@
 'use client';
-import {useState} from "react";
 import DBorder from "@/components/DBorder";
 import Link from "next/link";
+import {usePathname} from 'next/navigation'
 import MobileMenu from "@/components/MobileMenu";
 
 function Navbar() {
 
-    const [open, setOpen] = useState(false);
-
-    const handleToggle = () => {
-        setOpen((prevState) => {
-            return !prevState
-        });
-    }
+    const pathname = usePathname()
 
     const text = `\{\(\) \=\> MyPortfolio\}`
 
@@ -32,20 +26,20 @@ function Navbar() {
 
                 <div className="navbar__menu desktop">
                     <div className="navbar__menu-center">
-                        <Link href={"/"}>
-                            <div>Home</div>
+                        <Link href={"/"} className={`menu__item ${pathname === '/' ? 'active' : ''}`}>
+                            <span>Home</span>
                         </Link>
-                        <Link href={"/projects"}>
-                            <div>Projects</div>
+                        <Link href={"/projects"} className={`menu__item ${pathname === '/projects' ? 'active' : ''}`}>
+                            <span>Projects</span>
                         </Link>
-                        <Link href={"/faq"}>
-                            <div>FAQ</div>
+                        <Link href={"/faq"} className={`menu__item ${pathname === '/faq' ? 'active' : ''}`}>
+                            <span>FAQ</span>
                         </Link>
-                        <Link href={"/about"}>
-                            <div>About Me</div>
+                        <Link href={"/about"} className={`menu__item ${pathname === '/about' ? 'active' : ''}`}>
+                            <span>About Me</span>
                         </Link>
-                        <Link href={"/contact"}>
-                            <div>Contact Me</div>
+                        <Link href={"/contact"} className={`menu__item ${pathname === '/contact' ? 'active' : ''}`}>
+                            <span>Contact Me</span>
                         </Link>
                     </div>
                 </div>
