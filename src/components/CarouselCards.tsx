@@ -1,8 +1,8 @@
 import SkillCard from "@/components/SkillCard";
 import ScrollCarousel from 'scroll-carousel-react';
-import {data} from "@/data/data";
+import {data} from "@/utils/data";
 
-const ScrollCarouselComponent = () => {
+const CarouselCards = () => {
     return (
         <ScrollCarousel
             autoplay
@@ -16,4 +16,4 @@ const ScrollCarouselComponent = () => {
     );
 };
 
-export default ScrollCarouselComponent;
+export default CarouselCards;

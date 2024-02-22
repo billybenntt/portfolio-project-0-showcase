@@ -2,7 +2,7 @@
 import dynamic from "next/dynamic";
 import {MessageCircleQuestion} from "lucide-react";
 
-const AccordionComponent = dynamic(() => import('@/components/AccordionComponent'), {ssr: false});
+const AccordionComponent = dynamic(() => import('@/components/AccordionFAQ'), {ssr: false});
 
 
 function FAQPage() {

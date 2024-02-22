@@ -4,7 +4,7 @@ import Image from 'next/image'
 import {Layers3, GraduationCap, Hand} from "lucide-react";
 import dynamic from 'next/dynamic';
 
-const ScrollCarousel = dynamic(() => import('@/components/ScrollCarouselComponent'), {ssr: false});
+const ScrollCarousel = dynamic(() => import('@/components/CarouselCards'), {ssr: false});
 
 
 function MainPage() {

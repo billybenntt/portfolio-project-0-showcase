@@ -2,7 +2,7 @@ import * as Accordion from '@radix-ui/react-accordion';
 import {PlusIcon, MinusIcon} from 'lucide-react'
 import {kurewaSerif} from "@/styles/fonts/fonts";
 
-function AccordionComponent() {
+function AccordionFAQ() {
     return (
         <Accordion.Root type="single" defaultValue="item-1" collapsible>
             <div className=" accordion-center">
@@ -42,13 +42,9 @@ function AccordionComponent() {
                         Lorem ipsum dolor sit amet.
                     </Accordion.Content>
                 </Accordion.Item>
-
-
             </div>
-
-
         </Accordion.Root>
     )
 }
 
-export default AccordionComponent
+export default AccordionFAQ
