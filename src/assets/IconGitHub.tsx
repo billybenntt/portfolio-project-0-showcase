@@ -3,9 +3,9 @@ import * as React from "react"
 const IconGithub = (props: React.SVGProps<SVGSVGElement>) => (
     <svg
         xmlns="http://www.w3.org/2000/svg"
-        width={"0.9em"}
-        height={"0.9em"}
-        viewBox="0 0 24 24"
+        width={"1em"}
+        height={"1em"}
+        viewBox="0 0 20 25"
         {...props}>
         <path
             fill="currentColor"

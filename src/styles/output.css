@@ -495,7 +495,7 @@ section.hero .section-center .icons {
   display: flex;
   justify-content: center;
   font-size: 2rem;
-  column-gap: 0.6rem;
+  column-gap: 0.8rem;
   color: #e1e1e1;
 }
 section.hero .section-center .icons svg {

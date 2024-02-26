@@ -11,12 +11,12 @@ function ProjectsPage() {
                 </div>
 
                 <div className="section-center projects-center">
-                    <ProjectCard/>
-                    <ProjectCard/>
-                    <ProjectCard/>
-                    <ProjectCard/>
-                    <ProjectCard/>
-                    <ProjectCard/>
+                    <ProjectCard imageSource="/project01.png" title="Age Calculator App"/>
+                    <ProjectCard imageSource="/project02.png" title="Bill Calculator App"/>
+                    <ProjectCard imageSource="/project02.png" title="Github User Search App"/>
+                    <ProjectCard imageSource="/project01.png" title="Bill Calculator App"/>
+                    <ProjectCard imageSource="/project01.png" title="Bill Calculator App"/>
+                    <ProjectCard imageSource="/project02.png" title="Bill Calculator App"/>
                 </div>
             </section>
         </main>

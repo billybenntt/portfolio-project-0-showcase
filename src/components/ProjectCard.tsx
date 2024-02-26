@@ -2,11 +2,15 @@ import {Radio, FolderGit2} from "lucide-react";
 import Image from 'next/image'
 import {jetBrainsMono} from "@/styles/fonts/fonts";
 
-function ProjectCard() {
+function ProjectCard(props: any) {
+
+
+    const {imageSource, title} = props
+
     return (
         <article className="project-card">
             <div className="project-image">
-                <Image src="/bg-3.png"
+                <Image src={imageSource}
                     width={500}
                     height={333}
                     priority
@@ -14,7 +18,7 @@ function ProjectCard() {
             </div>
             <div className="project-content">
                 <h3>Project 01</h3>
-                <h5>Age Calculator App</h5>
+                <h5>{title}</h5>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
 
                 <div className="btn-container">

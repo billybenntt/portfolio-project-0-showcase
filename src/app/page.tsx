@@ -26,8 +26,8 @@ function MainPage() {
                         <p>Enabling Improvement, One App at a Time</p>
 
                         <div className="icons">
-                            <IconLinkedIn/>
                             <IconGitHub/>
+                            <IconLinkedIn/>
                             <Icon104/>
                             <IconAtSign/>
                         </div>
