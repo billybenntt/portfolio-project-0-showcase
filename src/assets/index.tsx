@@ -16,9 +16,15 @@ import IconVite from "@/assets/IconVite";
 import IconPostman from "@/assets/IconPostman";
 import ImageHero from "@/assets/ImageHero";
 import IconLinkedIn from "@/assets/IconLinkedIn";
+import Icon104 from "@/assets/Icon104";
+import IconAtSign from "@/assets/IconAtSign";
+import IconGitHub from "@/assets/IconGitHub";
 
 export {
     IconJS,
+    IconAtSign,
+    IconGitHub,
+    Icon104,
     IconPostman,
     IconTS,
     IconRouter,

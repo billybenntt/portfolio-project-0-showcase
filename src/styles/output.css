@@ -489,10 +489,39 @@ section.hero .section-center {
   flex-direction: row;
   justify-content: space-evenly;
 }
+section.hero .section-center .icons {
+  cursor: pointer;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  column-gap: 0.6rem;
+  color: #e1e1e1;
+}
+section.hero .section-center .icons svg {
+  transition: 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+}
+section.hero .section-center .icons svg:nth-child(1):hover {
+  color: #b795f3;
+}
+section.hero .section-center .icons svg:nth-child(2):hover {
+  color: #0077B5;
+}
+section.hero .section-center .icons svg:nth-child(3):hover {
+  color: #eeac5d;
+}
+section.hero .section-center .icons svg:nth-child(4):hover {
+  color: #c5ff73;
+}
 section.hero .hero-text {
   display: flex;
   flex-direction: column;
   row-gap: 0.5rem;
+}
+section.hero .hero-text p {
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.75rem;
 }
 
 section.skills .skills-center {
@@ -513,9 +542,7 @@ section.skills .skill-card {
 section.skills .skill-card .icons {
   display: flex;
   column-gap: 0.5rem;
-}
-section.skills .skill-card .icons svg {
-  height: 1.5rem;
+  color: #FFFFFF;
 }
 section.skills .skill-card h3, section.skills .skill-card p {
   text-align: start;
@@ -684,6 +711,9 @@ section.skills .skills-center {
 @media only screen and (min-width: 768px) {
   section.hero .section-center {
     text-align: left;
+  }
+  section.hero .section-center .icons {
+    justify-content: start;
   }
   .section-title {
     justify-content: start;

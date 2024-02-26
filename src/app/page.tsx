@@ -4,7 +4,7 @@ import {Layers3, GraduationCap, Hand} from "lucide-react";
 import dynamic from 'next/dynamic';
 import {ImageHero} from '@/assets'
 const ScrollCarousel = dynamic(() => import('@/components/CarouselCards'), {ssr: false});
-
+import {Icon104, IconLinkedIn, IconAtSign, IconGitHub} from '@/assets'
 
 function MainPage() {
     return (
@@ -23,7 +23,15 @@ function MainPage() {
                         </h1>
                         <h3 className="text-lg">My name is Bill</h3>
                         <h3 className="text-lg">Front-End Developer</h3>
-                        <p>Turning Ideas Into Interactive Reality</p>
+                        <p>Enabling Improvement, One App at a Time</p>
+
+                        <div className="icons">
+                            <IconLinkedIn/>
+                            <IconGitHub/>
+                            <Icon104/>
+                            <IconAtSign/>
+                        </div>
+
                     </div>
 
                     <div className="desktop">
