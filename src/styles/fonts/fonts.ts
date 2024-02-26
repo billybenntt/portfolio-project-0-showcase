@@ -8,7 +8,7 @@ export const latoSerif = Lato({weight: ['400', '700'], subsets: ['latin']});
 export const kurewaSerif = localFont({
     src: [
         {
-            path: '../../assets/localfonts/KurewaGothicCjkTc-SemiBold.ttf',
+            path: './localfonts/KurewaGothicCjkTc-SemiBold.ttf',
             weight: '400',
             style: 'normal',
         }

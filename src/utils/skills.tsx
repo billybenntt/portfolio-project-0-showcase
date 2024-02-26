@@ -1,11 +1,14 @@
-export const data =
+import * as Icons from '@/assets';
+
+
+export const skills =
     [
         {
             "id": 1,
             "title": "The Essentials",
             "icons": [
-                "ras.svg",
-                "tas.svg"
+                <Icons.IconJS key={1}/>,
+                <Icons.IconTS key={2}/>,
             ],
             "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam earum eius error exercitationem fugit, laudantium minima placeat quaerat quia"
         },
@@ -13,8 +16,8 @@ export const data =
             "id": 2,
             "title": "The Basics",
             "icons": [
-                "html.svg",
-                "css.svg"
+                <Icons.IconHTML key={3}/>,
+                <Icons.IconCSS key={4}/>,
             ],
             "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam earum eius error exercitationem fugit, laudantium minima placeat quaerat quia"
         },
@@ -22,8 +25,8 @@ export const data =
             "id": 3,
             "title": "CSS frameworks",
             "icons": [
-                "tailwind.svg",
-                "scss.svg",
+                <Icons.IconSCSS key={5}/>,
+                <Icons.IconTailwind key={6}/>,
             ],
             "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam earum eius error exercitationem fugit, laudantium minima placeat quaerat quia"
         },
@@ -31,9 +34,8 @@ export const data =
             "id": 4,
             "title": "Tooling",
             "icons": [
-                "vite.svg",
-                "next.svg",
-
+                <Icons.IconVite key={7}/>,
+                <Icons.IconNext key={8}/>,
             ],
             "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam earum eius error exercitationem fugit, laudantium minima placeat quaerat quia"
         },
@@ -41,9 +43,7 @@ export const data =
             "id": 5,
             "title": "Frameworks",
             "icons": [
-                "react.svg",
-                "next.svg"
-
+                <Icons.IconReact key={7}/>,
             ],
             "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam earum eius error exercitationem fugit, laudantium minima placeat quaerat quia"
         },
@@ -51,8 +51,8 @@ export const data =
             "id": 6,
             "title": "Routing",
             "icons": [
-                "react_router.svg",
-                "next.svg",
+                <Icons.IconRouter key={8}/>,
+                <Icons.IconNext key={9}/>,
             ],
             "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam earum eius error exercitationem fugit, laudantium minima placeat quaerat quia"
         },
@@ -60,8 +60,8 @@ export const data =
             "id": 7,
             "title": "State Management",
             "icons": [
-                "test.svg",
-                "redux.svg",
+                <Icons.IconReactAlt key={10}/>,
+                <Icons.IconRedux key={11}/>,
             ],
             "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam earum eius error exercitationem fugit, laudantium minima placeat quaerat quia"
         },
@@ -69,7 +69,7 @@ export const data =
             "id": 8,
             "title": "BAAS",
             "icons": [
-                "supabase.svg",
+                <Icons.IconSupaBase key={12}/>,
             ],
             "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam earum eius error exercitationem fugit, laudantium minima placeat quaerat quia"
         },
@@ -77,7 +77,7 @@ export const data =
             "id": 9,
             "title": "API Testing",
             "icons": [
-                "postman.svg",
+                <Icons.IconPostman key={13}/>,
             ],
             "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam earum eius error exercitationem fugit, laudantium minima placeat quaerat quia"
         }

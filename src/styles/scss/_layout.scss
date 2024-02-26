@@ -225,9 +225,14 @@ section.skills {
     font-size: 1rem;
     font-weight: normal;
 
-    .icon {
+    .icons {
       display: flex;
       column-gap: 0.5rem;
+
+      svg {
+        height: 1.5rem;
+      }
+
     }
 
 
