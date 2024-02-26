@@ -1,6 +1,5 @@
 import * as Icons from '@/assets';
 
-
 export const skills =
     [
         {

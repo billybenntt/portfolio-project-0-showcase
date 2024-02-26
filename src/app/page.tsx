@@ -1,9 +1,8 @@
 'use client'
 
-import Image from 'next/image'
 import {Layers3, GraduationCap, Hand} from "lucide-react";
 import dynamic from 'next/dynamic';
-
+import {ImageHero} from '@/assets'
 const ScrollCarousel = dynamic(() => import('@/components/CarouselCards'), {ssr: false});
 
 
@@ -28,7 +27,7 @@ function MainPage() {
                     </div>
 
                     <div className="desktop">
-                        <Image src="image-3.svg" alt="section" height={0} width={0}/>
+                        <ImageHero />
                     </div>
                 </div>
             </section>

@@ -6,9 +6,11 @@ function ProjectCard() {
     return (
         <article className="project-card">
             <div className="project-image">
-
-                <Image src="/bg-3.png" width={390} height={200} alt=""/>
-
+                <Image src="/bg-3.png"
+                    width={500}
+                    height={333}
+                    priority
+                    alt="project-image"/>
             </div>
             <div className="project-content">
                 <h3>Project 01</h3>
@@ -16,7 +18,6 @@ function ProjectCard() {
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
 
                 <div className="btn-container">
-
                     <a href="https://www.google.com" target="_blank">
                         <button className="btn btn-primary">
                             <Radio size={20}/>
@@ -25,7 +26,6 @@ function ProjectCard() {
                         </span>
                         </button>
                     </a>
-
                     <a href="https://www.github.com" target="_blank">
                         <button className="btn btn-secondary">
                             <FolderGit2 size={20}/>

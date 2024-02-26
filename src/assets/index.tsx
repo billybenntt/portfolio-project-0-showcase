@@ -14,6 +14,8 @@ import IconSupaBase from "@/assets/IconSupaBase";
 import IconTailwind from "@/assets/IconTailwind";
 import IconVite from "@/assets/IconVite";
 import IconPostman from "@/assets/IconPostman";
+import ImageHero from "@/assets/ImageHero";
+import IconLinkedIn from "@/assets/IconLinkedIn";
 
 export {
     IconJS,
@@ -31,5 +33,7 @@ export {
     IconRedux,
     IconReact,
     IconHTML,
-    IconBoostrap
+    IconBoostrap,
+    ImageHero,
+    IconLinkedIn
 };

@@ -1,4 +1,5 @@
 import {GraduationCap} from "lucide-react";
+import {IconLinkedIn} from "@/assets";
 
 function ContactPage() {
     return (
@@ -12,6 +13,7 @@ function ContactPage() {
 
                 <div className="section-center">
                     <div className="desktop">
+                        <IconLinkedIn/>
                     </div>
                 </div>
             </section>

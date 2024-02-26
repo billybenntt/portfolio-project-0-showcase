@@ -390,6 +390,8 @@ body {
 .navbar .navbar__menu-center {
   display: flex;
   column-gap: 1rem;
+  font-family: "JetBrains Mono", serif;
+  font-size: 0.8rem;
   justify-content: space-between;
 }
 .navbar .navbar__logo {
@@ -404,9 +406,10 @@ body {
 
 .menu__item {
   transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1) 0s;
-  padding: 0.3rem;
+  padding: 0.3rem 0.8rem;
   border-radius: 4px;
   outline: 2px dashed transparent;
+  font-family: "JetBrains Mono", serif;
 }
 .menu__item.active {
   color: black;
@@ -486,10 +489,6 @@ section.hero .section-center {
   flex-direction: row;
   justify-content: space-evenly;
 }
-section.hero .section-center img {
-  width: 400px;
-  height: 400px;
-}
 section.hero .hero-text {
   display: flex;
   flex-direction: column;
@@ -511,9 +510,12 @@ section.skills .skill-card {
   font-size: 1rem;
   font-weight: normal;
 }
-section.skills .skill-card .icon {
+section.skills .skill-card .icons {
   display: flex;
   column-gap: 0.5rem;
+}
+section.skills .skill-card .icons svg {
+  height: 1.5rem;
 }
 section.skills .skill-card h3, section.skills .skill-card p {
   text-align: start;
@@ -623,10 +625,6 @@ section.skills .skills-center {
 }
 .project-card .project-image {
   background-color: #2A2E35;
-}
-.project-card .project-image img {
-  width: 100%;
-  height: auto;
 }
 .project-card .project-content {
   padding: 1rem;
