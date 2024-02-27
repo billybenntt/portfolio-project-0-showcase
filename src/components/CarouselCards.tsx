@@ -5,10 +5,10 @@ import {skills} from "@/utils/skills";
 const CarouselCards = () => {
     return (
         <ScrollCarousel
-            autoplay
-            autoplaySpeed={50}
-            smartSpeed={false}
-            speed={10}>
+            autoplay={true}
+            autoplaySpeed={4}
+            smartSpeed={true}
+            speed={4}>
             {skills.map((item, index) => {
                 return <SkillCard key={index} {...item}/>
             })}

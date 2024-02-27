@@ -3,6 +3,7 @@ import DBorder from "@/components/DBorder";
 import Link from "next/link";
 import {usePathname} from 'next/navigation'
 import MobileMenu from "@/components/MobileMenu";
+import {jetBrainsMono} from "@/styles/fonts/fonts";
 
 function Navbar() {
 
@@ -11,7 +12,7 @@ function Navbar() {
     const text = `\{\(\) \=\> MyPortfolio\}`
 
     return (
-        <nav className="navbar">
+        <nav className={`navbar ${jetBrainsMono.className}`}>
             <div className="navbar-center">
 
                 <Link href={"/"}>
@@ -25,7 +26,7 @@ function Navbar() {
 
 
                 <div className="navbar__menu desktop">
-                    <div className="navbar__menu-center">
+                    <div className={`navbar__menu-center`}>
                         <Link href={"/"} className={`menu__item ${pathname === '/' ? 'active' : ''}`}>
                             <span>Home</span>
                         </Link>

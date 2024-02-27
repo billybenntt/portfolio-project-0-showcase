@@ -3,6 +3,7 @@ import {Grip} from 'lucide-react';
 import Link from "next/link";
 import {useEffect, useState} from 'react';
 import {usePathname} from 'next/navigation'
+import {jetBrainsMono} from "@/styles/fonts/fonts";
 
 function MobileMenu() {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -29,7 +30,7 @@ function MobileMenu() {
 
 
     return (
-        <div className="mobile mobile-menu">
+        <div className={`mobile-menu mobile`}>
             <DropdownMenu.Root
                 modal={true}
                 open={menuOpen}
@@ -45,7 +46,7 @@ function MobileMenu() {
                         sideOffset={18}
                         hideWhenDetached={true}
                         sticky="partial"
-                        className="menu-content">
+                        className={`menu-content  ${jetBrainsMono.className}`}>
 
                         <DropdownMenu.Item className="mobile-menu_item">
                             <Link href="/" onClick={closeMenu} className={`menu__item ${pathname === '/' ? 'active' : ''}`}>
