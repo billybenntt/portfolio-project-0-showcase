@@ -640,20 +640,25 @@ section.skills .skills-center {
   background-color: #2A2E35;
   color: white;
   width: 300px;
+  height: 400px;
   cursor: pointer;
   overflow: hidden;
   transition: 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0s;
 }
 .project-card .project-image {
   background-color: #2A2E35;
+  height: 50%;
 }
 .project-card .project-content {
-  padding: 1rem;
+  height: 50%;
+}
+.project-card .project-content .center {
   display: flex;
+  padding: 1rem;
   flex-direction: column;
-  gap: 0.5rem;
 }
 .project-card .project-content h3, .project-card .project-content h5 {
+  line-height: 1.5rem;
   text-transform: uppercase;
   font-weight: bold;
 }
