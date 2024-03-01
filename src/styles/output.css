@@ -489,6 +489,9 @@ section.hero .section-center .icons {
   column-gap: 0.8rem;
   color: #e1e1e1;
 }
+section.hero .section-center .icons a {
+  display: flex;
+}
 section.hero .section-center .icons svg {
   transition: 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0s;
 }
@@ -613,17 +616,19 @@ section.skills .skills-center {
 .timeline-1 .timeline-card .descr, .timeline-2 .timeline-card .title,
 .timeline-2 .timeline-card .descr {
   position: relative;
-  padding-inline: 1.5rem;
+  padding-inline: 1rem;
+  text-align: center;
 }
 .timeline-1 .timeline-card .title, .timeline-2 .timeline-card .title {
   overflow: hidden;
-  padding-block-start: 1.5rem;
-  padding-block-end: 1rem;
+  padding-block-start: 1rem;
+  padding-block-end: 0.5rem;
   font-weight: 500;
+  color: #e0e8f9;
 }
 .timeline-1 .timeline-card .descr, .timeline-2 .timeline-card .descr {
-  padding-block-end: 1.5rem;
   font-weight: 300;
+  font-size: 0.9rem;
 }
 
 .projects-center {
@@ -639,26 +644,34 @@ section.skills .skills-center {
   border-radius: 0.75rem;
   background-color: #2A2E35;
   color: white;
-  width: 300px;
-  height: 400px;
+  max-width: 19rem;
   cursor: pointer;
   overflow: hidden;
   transition: 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  height: 26rem;
 }
 .project-card .project-image {
   background-color: #2A2E35;
-  height: 50%;
+  height: 45%;
+  overflow: hidden;
 }
 .project-card .project-content {
-  height: 50%;
+  height: 55%;
 }
 .project-card .project-content .center {
+  padding: 1rem 0.9rem;
   display: flex;
-  padding: 1rem;
+  row-gap: 0.5rem;
+  justify-content: space-between;
   flex-direction: column;
 }
+.project-card .project-content .card-text {
+  font-size: 15px;
+  padding: 0.5rem 0;
+  height: 7rem;
+}
 .project-card .project-content h3, .project-card .project-content h5 {
-  line-height: 1.5rem;
+  line-height: 1.3rem;
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -732,6 +745,11 @@ section.skills .skills-center {
   }
   .timeline-1, .timeline-2 {
     /* start second card */
+  }
+  .timeline-1 .timeline-card .title,
+  .timeline-1 .timeline-card .descr, .timeline-2 .timeline-card .title,
+  .timeline-2 .timeline-card .descr {
+    text-align: left;
   }
   .timeline-1 .timeline-center, .timeline-2 .timeline-center {
     grid-template-columns: 1fr var(--line-w) 1fr;

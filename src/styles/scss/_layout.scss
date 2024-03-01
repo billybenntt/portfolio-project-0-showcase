@@ -189,7 +189,12 @@ section.hero {
       column-gap: 0.8rem;
       color: $accent-light-200;
 
+      a {
+        display: flex;
+      }
+
       svg {
+
         transition: $transition-3;
       }
 
@@ -348,20 +353,22 @@ section.skills {
   .timeline-card .title,
   .timeline-card .descr {
     position: relative;
-    padding-inline: 1.5rem;
+    padding-inline: 1rem;
+    text-align: center;
+
   }
 
   .timeline-card .title {
     overflow: hidden;
-    padding-block-start: 1.5rem;
-    padding-block-end: 1rem;
+    padding-block-start: 1rem;
+    padding-block-end: 0.5rem;
     font-weight: 500;
-
+    color: #e0e8f9;
   }
 
   .timeline-card .descr {
-    padding-block-end: 1.5rem;
     font-weight: 300;
+    font-size: 0.9rem;
   }
 
 
@@ -382,39 +389,45 @@ section.skills {
   border-radius: 0.75rem;
   background-color: #2A2E35;
   color: white;
-  width: 300px;
-  height: 400px;
+  max-width: 19rem;
   cursor: pointer;
   overflow: hidden;
   transition: $transition-3;
+  height: 26rem;
 
   .project-image {
-    //background-color: #1d1e24;
     background-color: #2A2E35;
-    height: 50%;
-
-
+    height: 45%;
+    overflow: hidden;
   }
 
   .project-content {
-    height: 50%;
+    height: 55%;
 
     .center {
+      padding: 1rem 0.9rem;
       display: flex;
-      padding: 1rem;
+      row-gap: 0.5rem;
+      justify-content: space-between;
       flex-direction: column;
 
+
+    }
+
+    .card-text {
+      font-size: 15px;
+      padding: 0.5rem 0;
+      height: 7rem;
     }
 
 
     h3, h5 {
-      line-height: 1.5rem;
+      line-height: 1.3rem;
       text-transform: uppercase;
       font-weight: bold;
     }
 
     p {
-
       color: hsla(215.4 16.3% 56.9%);
     }
 
@@ -483,6 +496,7 @@ section.skills {
       text-align: left;
 
       .icons {
+
         justify-content: start;
       }
 
@@ -522,6 +536,14 @@ section.skills {
 
 
   .timeline-1, .timeline-2 {
+
+
+    .timeline-card .title,
+    .timeline-card .descr {
+      text-align: left;
+
+    }
+
     .timeline-center {
       grid-template-columns: 1fr var(--line-w) 1fr;
     }

@@ -3,6 +3,7 @@
 import {Layers3, GraduationCap, Hand} from "lucide-react";
 import dynamic from 'next/dynamic';
 import {ImageHero} from '@/assets'
+
 const ScrollCarousel = dynamic(() => import('@/components/CarouselCards'), {ssr: false});
 import {Icon104, IconLinkedIn, IconAtSign, IconGitHub} from '@/assets'
 
@@ -26,16 +27,29 @@ function MainPage() {
                         <p>Enabling Improvement, One App at a Time</p>
 
                         <div className="icons">
-                            <IconGitHub/>
-                            <IconLinkedIn/>
-                            <Icon104/>
-                            <IconAtSign/>
+                            <a href="https://github.com/billybenntt" target="_blank">
+                                <IconGitHub/>
+                            </a>
+
+                            <a href="https://github.com/billybenntt" target="_blank">
+                                <IconLinkedIn/>
+                            </a>
+
+                            <a href="https://github.com/billybenntt" target="_blank">
+                                <Icon104/>
+                            </a>
+
+
+                            <a href="https://github.com/billybenntt" target="_blank">
+                                <IconAtSign/>
+                            </a>
+
                         </div>
 
                     </div>
 
                     <div className="desktop">
-                        <ImageHero />
+                        <ImageHero/>
                     </div>
                 </div>
             </section>
@@ -63,41 +77,36 @@ function MainPage() {
                 <div className="timeline-center section-center">
                     <div className="timeline-card">
                         <div className="date">2020- Present</div>
-                        <div className="title">Title 1</div>
-                        <div className="descr">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas itaque hic
-                            quibusdam fugiat est numquam harum, accusamus suscipit consequatur laboriosam!
-                        </div>
+                        <div className="title">Systems & Technology Corp</div>
+                        <div className="descr">Technical Support Engineer</div>
+                        <div className="descr">New Taipei City, Taiwan</div>
+
+
                     </div>
 
                     <div className="timeline-card">
                         <div className="date">2018-2020</div>
-                        <div className="title">Title 2</div>
-                        <div className="descr">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos adipisci
-                            nobis
-                            nostrum vero nihil veniam.
-                        </div>
+                        <div className="title">National Tsing Hua University</div>
+                        <div className="descr">Master in Information Systems and Applications</div>
+                        <div className="descr">Hsinchu City, Taiwan</div>
+
                     </div>
                     <div className="timeline-card">
                         <div className="date">2016-2018</div>
-                        <div className="title">Title 3</div>
-                        <div className="descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga minima
-                            consequuntur soluta placeat iure totam commodi repellendus ea delectus, libero fugit quod
-                            reprehenderit, sequi quo, et dolorum saepe nulla hic.
-                        </div>
+                        <div className="title">Xerox Corporation</div>
+                        <div className="descr">Support Representative</div>
+                        <div className="descr">Guatemala City, Guatemala</div>
+
+
                     </div>
                     <div className="timeline-card">
                         <div className="date">2012-2016</div>
-                        <div className="title">Title 4</div>
-                        <div className="descr">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit,
-                            cumque.
-                        </div>
+                        <div className="title">National Chengchi University</div>
+                        <div className="descr">Bachelor of Businesss Administration</div>
+                        <div className="descr">Taipei, Taiwan</div>
+
                     </div>
-                    <div className="timeline-card">
-                        <div className="date">2022</div>
-                        <div className="title">Title 5</div>
-                        <div className="descr">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, non.
-                        </div>
-                    </div>
+
                 </div>
             </section>
 

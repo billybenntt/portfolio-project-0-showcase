@@ -19,9 +19,15 @@ function ProjectCard(props: any) {
             </div>
             <div className="project-content">
                 <div className="center">
-                    <h3>{title}</h3>
-                    <h5>{subTitle}</h5>
-                    <p>{description}</p>
+
+                    <div className="card-header">
+                        <h3>{title}</h3>
+                        <h5>{subTitle}</h5>
+                    </div>
+
+                    <p className="card-text">
+                        {description}
+                    </p>
 
                     <div className="btn-container">
                         <a href={linkSite} target="_blank">

@@ -9,7 +9,7 @@ export const skills =
                 <Icons.IconJS key={1}/>,
                 <Icons.IconTS key={2}/>,
             ],
-            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam earum eius error exercitationem fugit, laudantium minima placeat quaerat quia"
+            "description": "Experienced in JavaScript and TypeScript for web application development as well as implementing front-end functionality and solving complex problems with clean, maintainable code"
         },
         {
             "id": 2,
@@ -18,7 +18,8 @@ export const skills =
                 <Icons.IconHTML key={3}/>,
                 <Icons.IconCSS key={4}/>,
             ],
-            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam earum eius error exercitationem fugit, laudantium minima placeat quaerat quia"
+            "description": "Experienced in HTML and CSS for building responsive and visually appealing web pages," +
+                " while writing well-structured and semantic markup using  modern CSS techniques for styling."
         },
         {
             "id": 3,
@@ -27,33 +28,36 @@ export const skills =
                 <Icons.IconSCSS key={5}/>,
                 <Icons.IconTailwind key={6}/>,
             ],
-            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam earum eius error exercitationem fugit, laudantium minima placeat quaerat quia"
+            "description": "Experienced in SCSS and Tailwind for efficient and modular CSS development. " +
+                "Experienced in leveraging preprocessor capabilities and utility-first frameworks to streamline " +
+                "styling workflows and enhance maintainability"
         },
         {
             "id": 4,
-            "title": "Tooling",
+            "title": "Development Frameworks",
             "icons": [
                 <Icons.IconVite key={7}/>,
                 <Icons.IconNext key={8}/>,
             ],
-            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam earum eius error exercitationem fugit, laudantium minima placeat quaerat quia"
+            "description": "Experienced in utilizing modern tooling such as Vite and Next.js to streamline web" +
+                " development workflows to enhance performance and create robust web applications"
         },
         {
             "id": 5,
-            "title": "Frameworks",
+            "title": "JS Frameworks",
             "icons": [
                 <Icons.IconReact key={7}/>,
             ],
-            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam earum eius error exercitationem fugit, laudantium minima placeat quaerat quia"
+            "description": "Experienced in ReactJS for building dynamic web applications. Eager to expand skills by learning new frameworks and technologies for versatile development capabilities"
         },
         {
             "id": 6,
-            "title": "Routing",
+            "title": "Page Routing",
             "icons": [
                 <Icons.IconRouter key={8}/>,
                 <Icons.IconNext key={9}/>,
             ],
-            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam earum eius error exercitationem fugit, laudantium minima placeat quaerat quia"
+            "description": "Experienced in implementing routing solutions with React Router and Next.js for seamless navigation and dynamic application routing."
         },
         {
             "id": 7,
@@ -62,15 +66,15 @@ export const skills =
                 <Icons.IconReactAlt key={10}/>,
                 <Icons.IconRedux key={11}/>,
             ],
-            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam earum eius error exercitationem fugit, laudantium minima placeat quaerat quia"
+            "description": "Experienced in managing state efficiently using React's built-in Reducer hooks and Context API. Proficient in implementing complex state management. Additionally, experienced in utilizing Redux for larger-scale applications when necessary."
         },
         {
             "id": 8,
-            "title": "BAAS",
+            "title": "Backend Services",
             "icons": [
                 <Icons.IconSupaBase key={12}/>,
             ],
-            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam earum eius error exercitationem fugit, laudantium minima placeat quaerat quia"
+            "description": "Proficient in utilizing Supabase (The Open Source Firebase alternative) as a backend solution for web applications, leveraging its robust features and JWT functionality for secure authentication and data management"
         },
         {
             "id": 9,
@@ -78,7 +82,7 @@ export const skills =
             "icons": [
                 <Icons.IconPostman key={13}/>,
             ],
-            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam earum eius error exercitationem fugit, laudantium minima placeat quaerat quia"
+            "description": "Experienced in API testing using Postman, ensuring reliability and functionality of web services. Familiar with the REST protocol, as well as validating requests for proper integration with the web interface."
         }
 
 
