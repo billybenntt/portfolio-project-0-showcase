@@ -3,7 +3,6 @@ import ProjectCard from "@/components/ProjectCard";
 import {projects} from "@/utils/projects";
 
 
-console.log(projects)
 
 function ProjectsPage() {
     return (
