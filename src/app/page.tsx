@@ -31,7 +31,7 @@ function MainPage() {
                                 <IconGitHub/>
                             </a>
 
-                            <a href="https://github.com/billybenntt" target="_blank">
+                            <a href="https://www.linkedin.com/in/wbennett10/" target="_blank">
                                 <IconLinkedIn/>
                             </a>
 
@@ -40,7 +40,7 @@ function MainPage() {
                             </a>
 
 
-                            <a href="https://github.com/billybenntt" target="_blank">
+                            <a href="mailto:billbenntt@gapp.nthu.edu.tw" target="_blank">
                                 <IconAtSign/>
                             </a>
 
@@ -102,7 +102,7 @@ function MainPage() {
                     <div className="timeline-card">
                         <div className="date">2012-2016</div>
                         <div className="title">National Chengchi University</div>
-                        <div className="descr">Bachelor of Businesss Administration</div>
+                        <div className="descr">Bachelor of Business Administration</div>
                         <div className="descr">Taipei, Taiwan</div>
 
                     </div>
