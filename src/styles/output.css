@@ -591,13 +591,13 @@ section.skills .skills-center {
   --dateH: 3rem;
   height: var(--dateH);
   margin-inline: calc(var(--inlineP) * -1);
-  text-align: center;
   background-color: var(--accent-color);
   color: white;
   font-size: 1.25rem;
   font-weight: 700;
   display: grid;
-  place-content: center;
+  align-items: center;
+  justify-content: center;
   position: relative;
   border-radius: calc(var(--dateH) / 2) 0 0 calc(var(--dateH) / 2);
 }
@@ -751,6 +751,15 @@ section.skills .skills-center {
   .timeline-1, .timeline-2 {
     /* start second card */
   }
+  .timeline-1 .timeline-center, .timeline-2 .timeline-center {
+    max-width: 768px;
+  }
+  .timeline-1 .timeline-card:nth-child(odd) .date, .timeline-2 .timeline-card:nth-child(odd) .date {
+    justify-content: start;
+  }
+  .timeline-1 .timeline-card:nth-child(even) .date, .timeline-2 .timeline-card:nth-child(even) .date {
+    justify-content: end;
+  }
   .timeline-1 .timeline-card .title,
   .timeline-1 .timeline-card .descr, .timeline-2 .timeline-card .title,
   .timeline-2 .timeline-card .descr {
@@ -765,8 +774,14 @@ section.skills .skills-center {
   .timeline-1 .timeline-card:nth-child(odd), .timeline-2 .timeline-card:nth-child(odd) {
     grid-column: 1;
   }
+  .timeline-1 .timeline-card:nth-child(odd) .title, .timeline-1 .timeline-card:nth-child(odd) .descr, .timeline-2 .timeline-card:nth-child(odd) .title, .timeline-2 .timeline-card:nth-child(odd) .descr {
+    text-align: left;
+  }
   .timeline-1 .timeline-card:nth-child(even), .timeline-2 .timeline-card:nth-child(even) {
     grid-column: 3;
+  }
+  .timeline-1 .timeline-card:nth-child(even) .title, .timeline-1 .timeline-card:nth-child(even) .descr, .timeline-2 .timeline-card:nth-child(even) .title, .timeline-2 .timeline-card:nth-child(even) .descr {
+    text-align: right;
   }
   .timeline-1 .timeline-card:nth-child(2), .timeline-2 .timeline-card:nth-child(2) {
     grid-row: 2/4;

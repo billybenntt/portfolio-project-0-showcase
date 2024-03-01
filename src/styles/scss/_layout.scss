@@ -323,13 +323,13 @@ section.skills {
     --dateH: 3rem;
     height: var(--dateH);
     margin-inline: calc(var(--inlineP) * -1);
-    text-align: center;
     background-color: var(--accent-color);
     color: white;
     font-size: 1.25rem;
     font-weight: 700;
     display: grid;
-    place-content: center;
+    align-items: center;
+    justify-content: center;
     position: relative;
     border-radius: calc(var(--dateH) / 2) 0 0 calc(var(--dateH) / 2);
   }
@@ -544,6 +544,20 @@ section.skills {
 
   .timeline-1, .timeline-2 {
 
+    .timeline-center{
+      max-width: 768px;
+    }
+
+
+     .timeline-card:nth-child(odd) .date,{
+       justify-content: start;
+     }
+
+      .timeline-card:nth-child(even) .date,{
+       justify-content: end;
+     }
+
+
 
     .timeline-card .title,
     .timeline-card .descr {
@@ -561,10 +575,20 @@ section.skills {
 
     .timeline-card:nth-child(odd) {
       grid-column: 1;
+
+      .title ,.descr{
+        text-align: left;
+      }
+
+
     }
 
     .timeline-card:nth-child(even) {
       grid-column: 3;
+
+       .title, .descr{
+        text-align: right;
+      }
     }
 
     /* start second card */
