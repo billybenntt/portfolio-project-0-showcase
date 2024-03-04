@@ -500,14 +500,39 @@ section.skills {
   color: #e0e8f9;
   font-size: 1rem;
   width: $max-w-sm;
+  display: grid;
+  row-gap: 1rem;
+  justify-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: 120px 1fr;
+
+  .author-img img {
+    border-radius: 25%;
+  }
+
+  p {
+    padding: 0.7rem 0;
+  }
+
+
 }
 
 
 @media only screen and (min-width: map-get($breakpoints, "md")) {
 
 
-  .about-center, .contact-center {
+  .about-center {
+
+    grid-template-columns: 150px 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 1rem;
     width: $max-w-md;
+  }
+
+  .contact-center {
+
+    width: $max-w-md;
+
   }
 
 
