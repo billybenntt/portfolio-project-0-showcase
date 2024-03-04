@@ -495,8 +495,21 @@ section.skills {
 
 }
 
+.about-center, .contact-center {
+  margin: 0 auto;
+  color: #e0e8f9;
+  font-size: 1rem;
+  width: $max-w-sm;
+}
+
 
 @media only screen and (min-width: map-get($breakpoints, "md")) {
+
+
+  .about-center, .contact-center {
+    width: $max-w-md;
+  }
+
 
   section.hero {
     .section-center {
@@ -544,19 +557,18 @@ section.skills {
 
   .timeline-1, .timeline-2 {
 
-    .timeline-center{
+    .timeline-center {
       max-width: 768px;
     }
 
 
-     .timeline-card:nth-child(odd) .date,{
-       justify-content: start;
-     }
+    .timeline-card:nth-child(odd) .date, {
+      justify-content: start;
+    }
 
-      .timeline-card:nth-child(even) .date,{
-       justify-content: end;
-     }
-
+    .timeline-card:nth-child(even) .date, {
+      justify-content: end;
+    }
 
 
     .timeline-card .title,
@@ -576,7 +588,7 @@ section.skills {
     .timeline-card:nth-child(odd) {
       grid-column: 1;
 
-      .title ,.descr{
+      .title, .descr {
         text-align: left;
       }
 
@@ -586,7 +598,7 @@ section.skills {
     .timeline-card:nth-child(even) {
       grid-column: 3;
 
-       .title, .descr{
+      .title, .descr {
         text-align: right;
       }
     }
