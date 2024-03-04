@@ -1,4 +1,5 @@
 import {GraduationCap} from "lucide-react";
+import {jetBrainsMono} from "@/styles/fonts/fonts";
 
 function ContactPage() {
     return (
