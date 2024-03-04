@@ -17,6 +17,8 @@ function ContactPage() {
                             forward to discussing potential endeavors with you.</p>
                     </div>
 
+
+
                 </div>
             </section>
         </main>
