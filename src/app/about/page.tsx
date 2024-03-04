@@ -69,7 +69,7 @@ function AboutPage() {
 
 
                                 <p>
-                                    歡迎你來探索我的作品集頁面，在那裡我展示我的項目並提供源代碼訪問，展示我Tech Stack的實現
+                                    歡迎你來探索我的作品集頁面，在那裡我展示我的項目並提供source code 訪問，展示我Tech Stack的實現
                                 </p>
 
                             </div>
