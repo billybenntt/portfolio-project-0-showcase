@@ -16,8 +16,8 @@ A comprehensive portfolio page, featuring a Hero section, an interactive Tech St
 
 To install this project, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/billybenntt/portfolio-project-6-invoice_app.git`
-2. Navigate to the project directory: `cd portfolio-project-6-invoice_app`
+1. Clone the repository: `git clone https://github.com/billybenntt/portfolio-project-0-showcase.git`
+2. Navigate to the project directory: `cd portfolio-project-0-showcase`
 3. Install dependencies: `npm install`
 
 
