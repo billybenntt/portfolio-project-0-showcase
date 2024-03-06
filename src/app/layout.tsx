@@ -3,6 +3,7 @@ import '../styles/output.css'
 import React from "react";
 import Navbar from "@/components/Navbar";
 import {latoSerif} from "@/styles/fonts/fonts";
+import {Analytics} from '@vercel/analytics/react';
 
 export const metadata: Metadata = {
     title: 'Portfolio Showcase',
@@ -21,6 +22,8 @@ export default function RootLayout({children}: rootProps) {
         <body className={latoSerif.className}>
             <Navbar/>
             {children}
+            <Analytics/>
+
         </body>
         </html>
     )
