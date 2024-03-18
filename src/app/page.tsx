@@ -35,7 +35,7 @@ function MainPage() {
                                 <IconLinkedIn/>
                             </a>
 
-                            <a href="https://pda.104.com.tw/profile/share/5e1zQoOsfwEDo8bbOUUEaV4ODxSslFHG" target="_blank">
+                            <a href="https://pda.104.com.tw/profile/share/5eP2npKyXjDWXwZI3mCh4UH4jc5OMFL3" target="_blank">
                                 <Icon104/>
                             </a>
 
